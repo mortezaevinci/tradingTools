@@ -1,0 +1,21 @@
+use python 3.8.3 (over 3.7)
+(may need to install pip as well, but should be inclkuded in python 3.8.3)
+
+ibkr should be compiled and installed:
+
+python setup.py bdist_wheel
+python -m pip install --user --upgrade dist/ibapi-9.75.1-py3-none-any.whl
+
+then install pandas
+python -m pip install pandas
+
+python -m pip install termcolor
+
+python -m pip install yahoo_fin
+python -m pip install requests
+
+
+
+
+
+from BrokerSpecificScript.ibkr_sync_wrapper import ibkr_sync_wrapper

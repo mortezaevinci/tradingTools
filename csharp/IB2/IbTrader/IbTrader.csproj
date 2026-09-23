@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MHA</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSharpAPI">
+      <HintPath>z:\k\TWS API\source\CSharpClient\client\bin\Release\netstandard2.0\CSharpAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IB\OrderDefinition\IBControlDefinition.csproj" />
+    <ProjectReference Include="..\ContractDefinition\ContractDefinition.csproj" />
+    <ProjectReference Include="..\IBAccountDefinition\IBAccountDefinition.csproj" />
+    <ProjectReference Include="..\IBWrapper\IBWrapper.csproj" />
+    <ProjectReference Include="..\OrderDefinition_\OrderDefinition.csproj" />
+    <ProjectReference Include="..\TickDefinition\TickDefinition.csproj" />
+    <ProjectReference Include="..\TradeExtensionExternalCondtion\TradeExtension.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>

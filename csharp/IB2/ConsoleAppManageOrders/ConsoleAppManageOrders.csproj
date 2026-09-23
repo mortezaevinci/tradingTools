@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IB\OrderDefinition\IBControlDefinition.csproj" />
+    <ProjectReference Include="..\..\temp TWS API\source\CSharpClient\client\CSharpAPI.csproj" />
+    <ProjectReference Include="..\BasicLogger\BasicLogger.csproj" />
+    <ProjectReference Include="..\ContractDefinition\ContractDefinition.csproj" />
+    <ProjectReference Include="..\IBAccountDefinition\IBAccountDefinition.csproj" />
+    <ProjectReference Include="..\IBBackEnd\IBBackEnd.csproj" />
+    <ProjectReference Include="..\IbTrader\IbTrader.csproj" />
+    <ProjectReference Include="..\IBWrapper\IBWrapper.csproj" />
+    <ProjectReference Include="..\MySmtpClient\MySmtpClient.csproj" />
+    <ProjectReference Include="..\OrderDefinition_\OrderDefinition.csproj" />
+    <ProjectReference Include="..\OrderManager\OrderManager.csproj" />
+    <ProjectReference Include="..\SystemExtension\SystemExtension.csproj" />
+    <ProjectReference Include="..\TradeExtensionExternalCondtion\TradeExtension.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>

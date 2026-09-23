@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\IB\OrderDefinition\IBControlDefinition.csproj" />
+    <ProjectReference Include="..\..\temp TWS API\source\CSharpClient\client\CSharpAPI.csproj" />
+    <ProjectReference Include="..\BasicLogger\BasicLogger.csproj" />
+    <ProjectReference Include="..\ContractDefinition\ContractDefinition.csproj" />
+    <ProjectReference Include="..\IBAccountDefinition\IBAccountDefinition.csproj" />
+    <ProjectReference Include="..\IBBackEnd\IBBackEnd.csproj" />
+    <ProjectReference Include="..\IBWrapper\IBWrapper.csproj" />
+    <ProjectReference Include="..\OrderDefinition_\OrderDefinition.csproj" />
+    <ProjectReference Include="..\OrderFlow\OrderFlow.csproj" />
+    <ProjectReference Include="..\SystemExtension\SystemExtension.csproj" />
+    <ProjectReference Include="..\TickDefinition\TickDefinition.csproj" />
+  </ItemGroup>
+
+</Project>

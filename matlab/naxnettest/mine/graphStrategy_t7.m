@@ -1,0 +1,174 @@
+function n=graphStrategy_t7(layout,looperParams,params,calculations,result)
+try
+if (~isempty(layout))
+     %;disp('graph');
+     tic;
+      if (looperParams.graph.showlimit>0)
+showlimit_=min(looperParams.graph.showlimit,numel(params.TimeTables.Minute.Date)-1);
+genericrange=(numel(params.TimeTables.Minute.Date)-showlimit_):numel(params.TimeTables.Minute.Date);
+else
+genericrange=1:numel(params.TimeTables.Minute.Date);
+      end
+
+dsample=params.TimeTables.Minute.Date(genericrange);
+
+scale_min=min(params.TimeTables.Minute.Low(genericrange));
+scale_max=max(params.TimeTables.Minute.High(genericrange));
+scale_d=scale_max-scale_min;
+scale_min=scale_min-scale_d*params.scalepercent;
+scale_max=scale_max+scale_d*params.scalepercent;
+
+
+
+book=readbook(params.symbol);
+if (~isempty(book))
+book=cleanbook(book,params.TimeTables.Minute.Close(end));
+
+%profile(book(:,1),book(:,2));
+ set(layout.bar_profile, 'XData', book(:,2), 'YData', book(:,1));
+ set(layout.plot_profile,'XData',0,'YData',params.TimeTables.Minute.Close(end));
+end
+if (params.doBookOnly==1)
+    return;
+end
+
+%axes(layout.ax{2});
+%title([num2str(params.TimeTables.Minute.Close(end)) ' at ' datestr(params.TimeTables.Minute.Date(end))]);
+set(layout.ax{2}.Title,'String',[num2str(params.TimeTables.Minute.Close(end)) ' at ' datestr(params.TimeTables.Minute.Date(end))]);
+layout.ax{2}.YLim=([scale_min ,scale_max]);
+
+ try
+plotcount=1;
+%layout.pmain{plotcount}=plot(dsample,params.TimeTables.Minute.Close(end)+rand(size(dsample)));
+%set(layout.pmain{plotcount}, 'XData',dsample , 'YData', params.TimeTables.Minute.Close(end)+rand(size(dsample)));
+%plotcount=plotcount+1;
+for j=1:numel(calculations.localOptimaProfile)
+for i=1:numel(calculations.localOptimaProfile{j}.profilelvls)
+   
+          if (calculations.localOptimaProfile{j}.profilelvls(i)>scale_min && calculations.localOptimaProfile{j}.profilelvls(i)<scale_max)
+ set(layout.plocalOptimaProfile{plotcount}, 'XData', [params.TimeTables.Minute.Date(genericrange(1)), params.TimeTables.Minute.Date(end)], 'YData', [calculations.localOptimaProfile{j}.profilelvls(i),calculations.localOptimaProfile{j}.profilelvls(i)],'Color',calculations.localOptimaProfile{j}.color,'LineStyle',calculations.localOptimaProfile{j}.style,'LineWidth',min(4,calculations.localOptimaProfile{j}.width_profilelvls(i)));
+  plotcount=plotcount+1;
+          end
+end
+end
+ catch exception
+getReport(exception,'extended','hyperlinks','off')
+    end
+
+    try
+plotcount=1;
+for i=1:numel(calculations.levels.values)
+    if (calculations.levels.values(i)>scale_min && calculations.levels.values(i)<scale_max)
+ %plot([params.TimeTables.Minute.Date(genericrange(1)), params.TimeTables.Minute.Date(end)],[calculations.levels.values(i),calculations.levels.values(i)],calculations.levels.color{i},'linewidth',calculations.levels.width(i));
+ set(layout.plevels{plotcount}, 'XData', [params.TimeTables.Minute.Date(genericrange(1)), params.TimeTables.Minute.Date(end)], 'YData', [calculations.levels.values(i),calculations.levels.values(i)],'Color',calculations.levels.color{i},'LineStyle',calculations.levels.style{i},'LineWidth',calculations.levels.width(i),'DisplayName',calculations.levels.name{i});
+   plotcount=plotcount+1;
+    end
+end
+ catch exception
+getReport(exception,'extended','hyperlinks','off')
+    end
+    try
+plotcount=1;
+for j=1:numel(calculations.localOptimaProfile)
+for i=1:numel(calculations.localOptimaProfile{j}.localoptima)
+    try
+        vsample=calculations.localOptimaProfile{j}.localoptima{i};%=(genericrange);
+         onlyvals=vsample>0;
+    set(layout.plocalOptimaTrend{plotcount}, 'XData', params.TimeTables.Minute.Date(onlyvals), 'YData', vsample(onlyvals),'LineWidth',j);
+    plotcount=plotcount+1;
+    catch 
+       disp('inde error again. fix this later.');
+       size(params.TimeTables.Minute.Date(onlyvals))
+       size(vsample(onlyvals))
+    end
+end
+end
+
+ catch exception
+getReport(exception,'extended','hyperlinks','off')
+    end
+
+    try
+plotcount=1;
+%% show upper indicators
+ %;disp('upper indicators');
+for i=1:numel(params.upper_indicators)
+  % plot(dsample,calculations.indicators{1}.upper(genericrange,params.upper_indicators{i}).Variables,'k--','linewidth',1);
+     set(layout.pindicators{plotcount}, 'XData',dsample , 'YData', calculations.indicators{1}.upper(genericrange,params.upper_indicators{i}).Variables);
+  plotcount=plotcount+1;   
+end
+ catch exception
+getReport(exception,'extended','hyperlinks','off')
+    end
+    
+%%prep entries
+try
+ pbto=calculations.indicators{1}.eval.pbto(genericrange);
+bto=find(pbto);
+psto=calculations.indicators{1}.eval.psto(genericrange);
+sto=find(psto);
+
+%% entries
+plotcount=1;
+%plot(dsample,calculations.indicators{1}.eval.pbto(genericrange)*1.001,'c^','linewidth',4);
+ set(layout.pmain{plotcount}, 'XData',dsample(bto) , 'YData', pbto(bto)*1.001);
+ plotcount=plotcount+1;
+%plot(dsample,calculations.indicators{1}.eval.psto(genericrange)9*0.999,'cv','linewidth',4);
+ set(layout.pmain{plotcount}, 'XData',dsample(sto), 'YData', psto(sto)*0.999);
+ plotcount=plotcount+1;
+ 
+%text(dsample(bto),calculations.indicators{1}.eval.pbto(bto)*1.001,num2str(calculations.up.final(bto)));
+%text(dsample(sto),calculations.indicators{1}.eval.psto(sto)*0.999,num2str(calculations.dn.final(sto)));
+
+textcount=1;
+
+% for i=1:numel(bto)
+%    set(layout.maintexts(textcount),'Position',[dsample(bto(i)),calculations.indicators{1}.eval.pbto(bto(i))*1.001,0],'String',num2str(calculations.up.final(bto(1))));
+%    textcount=textcount+1;
+% end
+%  
+catch
+    
+end
+ 
+
+%% candle 
+try
+cndl5layout(params.TimeTables.Minute(genericrange,:),layout.candleplotformat);
+
+%cndl4(params.TimeTables.Minute(genericrange,:));
+catch exception
+    getReport(exception,'extended','hyperlinks','off')
+end
+layout.ax{2}.XLim=([dsample(1)-seconds(30) dsample(end)+seconds(30)]);
+try
+    
+    
+    
+    
+
+catch exception
+getReport(exception,'extended','hyperlinks','off')
+end
+
+maxvol=max(params.TimeTables.Minute.Volume);
+pvs_=(calculations.up.cond | calculations.dn.cond).*params.TimeTables.Minute.Volume;
+pvs_(pvs_==0)=NaN;
+
+
+%bar(dsample,params.TimeTables.Minute.Volume(genericrange),'g');
+ set(layout.bar_lower1{1}, 'XData',dsample , 'YData', params.TimeTables.Minute.Volume(genericrange));
+
+%bar(dsample,calculations.sellv(genericrange),'r');
+set(layout.bar_lower1{2}, 'XData', dsample, 'YData',calculations.sellv(genericrange) );
+%plot(dsample,pvs_(genericrange),'*b');
+ set(layout.p_lower1, 'XData', dsample, 'YData',pvs_(genericrange) );
+ set(layout.axlower{1}.Title,'String',['maxvol=' fliplr(regexprep(fliplr(num2str(maxvol)),'\d{3}(?=\d)', '$0,'))]);
+%title(['maxvol=' fliplr(regexprep(fliplr(num2str(maxvol)),'\d{3}(?=\d)', '$0,'))]);
+drawnow
+%vertical_cursors;
+end
+catch exception
+getReport(exception,'extended','hyperlinks','off')
+end
+end

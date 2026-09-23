@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MHA</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\temp TWS API\source\CSharpClient\client\CSharpAPI.csproj" />
+    <ProjectReference Include="..\BasicLogger\BasicLogger.csproj" />
+    <ProjectReference Include="..\ContractDefinition\ContractDefinition.csproj" />
+    <ProjectReference Include="..\IBBackEnd\IBBackEnd.csproj" />
+    <ProjectReference Include="..\SystemExtension\SystemExtension.csproj" />
+  </ItemGroup>
+
+</Project>

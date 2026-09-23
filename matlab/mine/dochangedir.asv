@@ -1,0 +1,12 @@
+for si=1:numel(contracts)
+    fs=filefriendlysymbol(contracts{si}.FileSymbol);
+    disp(fs);
+
+        checksection=files(i).name(1:numel(fs));
+        if (strcmp(checksection,fs)==1)
+            src=[base files(i).name];
+            des=[base fs '\' files(i).name];
+            movefile(src,des);
+        end
+    end
+end

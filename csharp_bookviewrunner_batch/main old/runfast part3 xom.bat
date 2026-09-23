@@ -1,0 +1,1 @@
+start /MIN "XOM" "z:\My files\Project Trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" XOM,MRK,UNH,TLT,C,T,GLD,SLV,V,COST,UBER,NOW,DAL,LULU,GILD,MRNA 50 5000 "z:\My files\Project Trading\traderdata\book\"

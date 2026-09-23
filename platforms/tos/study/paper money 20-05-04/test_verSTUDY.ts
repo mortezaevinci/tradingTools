@@ -1,0 +1,1 @@
+addverticalLine(close>1935);

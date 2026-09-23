@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IBControlDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <id>0</id>
+  <port>0</port>
+  <ClientId>0</ClientId>
+  <systemStartTime />
+  <systemEndTime />
+  <auxAccountInfo>
+    <qty>1</qty>
+    <accountRisk>1000</accountRisk>
+    <tradeRisk>20</tradeRisk>
+  </auxAccountInfo>
+  <orderWatchlists>
+    <OrderWatchlist>
+      <id>0</id>
+      <contractDefinitions>
+        <ContractDefinition>
+          <marked>false</marked>
+          <reservedRequestId>0</reservedRequestId>
+          <id>0</id>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AACG</Symbol>
+            <SecType>STK</SecType>
+            <LastTradeDateOrContractMonth />
+            <Strike>0</Strike>
+            <Right />
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>AACG</LocalSymbol>
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+          </underlying>
+          <conditions />
+          <auxOrderInfo>
+            <brackerStop>0</brackerStop>
+            <bracketTarget>0</bracketTarget>
+            <parentLmt>0</parentLmt>
+            <parentAux>0</parentAux>
+            <parentTrailAmt>0</parentTrailAmt>
+            <stopTrailAmt>0</stopTrailAmt>
+            <targetTrailAmt>0</targetTrailAmt>
+            <bracketStopLmt>0</bracketStopLmt>
+            <bracketTargetAux>0</bracketTargetAux>
+            <qty>0</qty>
+            <applyConditions>true</applyConditions>
+          </auxOrderInfo>
+          <genericTicks />
+        </ContractDefinition>
+      </contractDefinitions>
+      <orderDefinitions>
+        <OrderDefinition>
+          <id>0</id>
+          <name />
+          <order>
+            <OrderId>558</OrderId>
+            <Solicited>false</Solicited>
+            <ClientId>0</ClientId>
+            <PermId>0</PermId>
+            <Action>BUY</Action>
+            <TotalQuantity>769</TotalQuantity>
+            <OrderType>LMT</OrderType>
+            <LmtPrice>1.39</LmtPrice>
+            <AuxPrice>0</AuxPrice>
+            <Tif>GTC</Tif>
+            <OcaGroup />
+            <OcaType>0</OcaType>
+            <OrderRef />
+            <Transmit>true</Transmit>
+            <ParentId>0</ParentId>
+            <BlockOrder>false</BlockOrder>
+            <SweepToFill>false</SweepToFill>
+            <DisplaySize>0</DisplaySize>
+            <TriggerMethod>0</TriggerMethod>
+            <OutsideRth>false</OutsideRth>
+            <Hidden>false</Hidden>
+            <GoodAfterTime />
+            <GoodTillDate />
+            <OverridePercentageConstraints>false</OverridePercentageConstraints>
+            <Rule80A />
+            <AllOrNone>false</AllOrNone>
+            <MinQty>2147483647</MinQty>
+            <PercentOffset>1.7976931348623157E+308</PercentOffset>
+            <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+            <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+            <FaGroup />
+            <FaProfile />
+            <FaMethod />
+            <FaPercentage />
+            <OpenClose />
+            <Origin>0</Origin>
+            <ShortSaleSlot>0</ShortSaleSlot>
+            <DesignatedLocation />
+            <ExemptCode>-1</ExemptCode>
+            <DiscretionaryAmt>0</DiscretionaryAmt>
+            <ETradeOnly>false</ETradeOnly>
+            <FirmQuoteOnly>false</FirmQuoteOnly>
+            <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+            <OptOutSmartRouting>false</OptOutSmartRouting>
+            <AuctionStrategy>0</AuctionStrategy>
+            <StartingPrice>1.7976931348623157E+308</StartingPrice>
+            <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+            <Delta>1.7976931348623157E+308</Delta>
+            <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+            <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+            <Volatility>1.7976931348623157E+308</Volatility>
+            <VolatilityType>0</VolatilityType>
+            <ContinuousUpdate>0</ContinuousUpdate>
+            <ReferencePriceType>0</ReferencePriceType>
+            <DeltaNeutralOrderType />
+            <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+            <DeltaNeutralConId>0</DeltaNeutralConId>
+            <DeltaNeutralSettlingFirm />
+            <DeltaNeutralClearingAccount />
+            <DeltaNeutralClearingIntent />
+            <DeltaNeutralOpenClose />
+            <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+            <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+            <DeltaNeutralDesignatedLocation />
+            <BasisPoints>1.7976931348623157E+308</BasisPoints>
+            <BasisPointsType>2147483647</BasisPointsType>
+            <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+            <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+            <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+            <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+            <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+            <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+            <ScaleAutoReset>false</ScaleAutoReset>
+            <ScaleInitPosition>2147483647</ScaleInitPosition>
+            <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+            <ScaleRandomPercent>false</ScaleRandomPercent>
+            <HedgeType />
+            <HedgeParam />
+            <Account>DU3053535</Account>
+            <WhatIf>false</WhatIf>
+            <NotHeld>false</NotHeld>
+            <OrderComboLegs />
+            <OrderMiscOptions />
+            <ActiveStartTime />
+            <ActiveStopTime />
+            <ScaleTable />
+            <ModelCode />
+            <ExtOperator />
+            <CashQty>0</CashQty>
+            <Mifid2DecisionMaker />
+            <Mifid2DecisionAlgo />
+            <Mifid2ExecutionTrader />
+            <Mifid2ExecutionAlgo />
+            <DontUseAutoPriceForHedge>true</DontUseAutoPriceForHedge>
+            <AutoCancelDate />
+            <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+            <RefFuturesConId>2147483647</RefFuturesConId>
+            <AutoCancelParent>false</AutoCancelParent>
+            <Shareholder />
+            <ImbalanceOnly>false</ImbalanceOnly>
+            <RouteMarketableToBbo>false</RouteMarketableToBbo>
+            <ParentPermId>9223372036854775807</ParentPermId>
+            <RandomizeSize>false</RandomizeSize>
+            <RandomizePrice>false</RandomizePrice>
+            <ReferenceContractId>0</ReferenceContractId>
+            <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+            <PeggedChangeAmount>0</PeggedChangeAmount>
+            <ReferenceChangeAmount>0</ReferenceChangeAmount>
+            <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+            <LmtPriceOffset>1.39</LmtPriceOffset>
+            <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+            <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+            <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+            <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+            <Conditions>
+              <OrderCondition xsi:type="TimeCondition">
+                <Type>Time</Type>
+                <IsConjunctionConnection>true</IsConjunctionConnection>
+                <IsMore>true</IsMore>
+                <Time>20210107 16:00:00 EST</Time>
+              </OrderCondition>
+              <OrderCondition xsi:type="PriceCondition">
+                <Type>Price</Type>
+                <IsConjunctionConnection>true</IsConjunctionConnection>
+                <IsMore>true</IsMore>
+                <ConId>48811132</ConId>
+                <Exchange>SMART</Exchange>
+                <Price>1.3</Price>
+                <TriggerMethod>Default</TriggerMethod>
+              </OrderCondition>
+              <OrderCondition xsi:type="VolumeCondition">
+                <Type>Volume</Type>
+                <IsConjunctionConnection>true</IsConjunctionConnection>
+                <IsMore>true</IsMore>
+                <ConId>48811132</ConId>
+                <Exchange>SMART</Exchange>
+                <Volume>809</Volume>
+              </OrderCondition>
+              <OrderCondition xsi:type="MarginCondition">
+                <Type>Margin</Type>
+                <IsConjunctionConnection>true</IsConjunctionConnection>
+                <IsMore>true</IsMore>
+                <Percent>20</Percent>
+              </OrderCondition>
+            </Conditions>
+            <ConditionsIgnoreRth>true</ConditionsIgnoreRth>
+            <ConditionsCancelOrder>false</ConditionsCancelOrder>
+            <Tier>
+              <Name />
+              <Value />
+              <DisplayName />
+            </Tier>
+            <IsOmsContainer>false</IsOmsContainer>
+            <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+            <UsePriceMgmtAlgo>false</UsePriceMgmtAlgo>
+          </order>
+          <childOrderDefinitions />
+          <contractDefinitionIndexes />
+          <externalConditions />
+        </OrderDefinition>
+      </orderDefinitions>
+    </OrderWatchlist>
+  </orderWatchlists>
+</IBControlDefinition>

@@ -1,0 +1,70 @@
+%for now, this would only work for the last day of data, because of the way
+%last day and last month are found.
+
+%************this will probably not work at the first day of the month...
+%need to find the last month, last day better.. maybe won't even work at
+%the beginnign of thre day
+
+%can possibly update tm data in real-time here, and show
+
+close all
+
+ global SYMBOLDONETODAY;
+clearvars -except SYMBOLDONETODAY parf;
+
+%looperparams_realtime;
+%run('config\looperparams_backtestall.m');
+run('config\looperparams_realtime_t10_ID3_bookonly');
+
+
+%run('config\looperparams_realtime_study_extended.m');
+
+%run('config\commonticks_patternrec_t9_ID4.m');
+run('config\commonticks_patternrec_t9_ID3.m');
+
+%%bypass
+ 
+% looperEngine.contracts={genContract([],'AMD'),genContract([],'BA'),genContract([],'SPY')};
+% looperEngine.runIndices=[1 2 3];
+%main params
+%run('config\mainparams_backtest_test_t7_STUDY.m');
+run('config\mainparams_backtest_test_t9_STUDY_ID3.m');
+
+%% prepare
+backtest_breakout_t10_ib_prepare;
+backtest_breakout_t9_prepare;
+
+%% background workers
+
+% if (looperEngine.data.updaterealtime==1 && looperEngine.IB.run==1)
+%     ib_realtime_t10_workeron;
+% end
+
+if (looperEngine.data.updaterealtime==1 || looperEngine.data.getalldatainrealtime==1)
+    if (mainticks{si}.params.doBookOnly==0)
+    backtest_breakout_t7_workeron;
+    end
+end
+
+%% divide to sections if more than 16 mainticks
+
+contracts_=looperEngine.contracts;
+
+
+%% main loop
+
+close all
+backtest_breakout_t10;
+if (mainticks{si}.params.doBookOnly==0)
+ibEngine_cancel_disconnect;
+end
+
+%% background workers off
+
+try
+    if (mainticks{si}.params.doBookOnly==0)
+ backtest_breakout_t7_workeroff;
+    end
+catch
+    
+end

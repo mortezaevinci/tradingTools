@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleAppManageOrders": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Z:/My files/Project Trading/traderdata/algotrading/autoswing/trader/config_manage_orders_xavol premarket.xml\""
+    }
+  }
+}

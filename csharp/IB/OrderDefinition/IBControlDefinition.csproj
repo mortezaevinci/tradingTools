@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MHA</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IB2\ContractDefinition\ContractDefinition.csproj" />
+    <ProjectReference Include="..\..\IB2\OrderDefinition_\OrderDefinition.csproj" />
+    <ProjectReference Include="..\..\IB2\SystemExtension\SystemExtension.csproj" />
+    <ProjectReference Include="..\..\IB2\TradeExtensionExternalCondtion\TradeExtension.csproj" />
+    <ProjectReference Include="..\..\temp TWS API\source\CSharpClient\client\CSharpAPI.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LogOrders": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Z:\\My files\\Project Trading\\traderdata\\algotrading\\daily orders log\\config_orders_4004.xml\""
+    }
+  }
+}

@@ -1,0 +1,1 @@
+initGetdata_t7(looperParams,params)

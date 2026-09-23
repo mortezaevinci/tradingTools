@@ -1,0 +1,1 @@
+start /MIN "BABA" "z:\My files\Project Trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" BABA,BILI,DELL,NET,NIO,NOW,UAL,DOCU 50 500 "z:\My files\Project Trading\traderdata\book\"

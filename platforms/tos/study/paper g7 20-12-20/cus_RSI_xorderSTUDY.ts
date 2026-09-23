@@ -1,0 +1,38 @@
+#
+# TD Ameritrade IP Company, Inc. (c) 2007-2020
+#
+
+declare lower;
+
+input length = 20;
+input over_Bought = 70;
+input over_Sold = 30;
+input price = close;
+input averageType = AverageType.WILDERS;
+input showBreakoutSignals = no;
+
+def NetChgAvg2 = MovingAverage(averageType, price - price[1], length);
+def NetChgAvg = MovingAverage(averageType, NetChgAvg2, length);
+def TotChgAvg2 = MovingAverage(averageType, AbsValue(price - price[1]), length);
+def TotChgAvg = MovingAverage(averageType,TotChgAvg2 , length);
+def ChgRatio = if TotChgAvg != 0 then NetChgAvg / TotChgAvg else 0;
+
+plot RSI = 50 * (ChgRatio + 1);
+plot OverSold = over_Sold;
+plot OverBought = over_Bought;
+plot UpSignal = if RSI crosses above OverSold then OverSold else Double.NaN;
+plot DownSignal = if RSI crosses below OverBought then OverBought else Double.NaN;
+
+UpSignal.SetHiding(!showBreakoutSignals);
+DownSignal.SetHiding(!showBreakoutSignals);
+
+RSI.DefineColor("OverBought", GetColor(5));
+RSI.DefineColor("Normal", GetColor(7));
+RSI.DefineColor("OverSold", GetColor(1));
+RSI.AssignValueColor(if RSI > over_Bought then RSI.color("OverBought") else if RSI < over_Sold then RSI.color("OverSold") else RSI.color("Normal"));
+OverSold.SetDefaultColor(GetColor(8));
+OverBought.SetDefaultColor(GetColor(8));
+UpSignal.SetDefaultColor(Color.UPTICK);
+UpSignal.SetPaintingStrategy(PaintingStrategy.ARROW_UP);
+DownSignal.SetDefaultColor(Color.DOWNTICK);
+DownSignal.SetPaintingStrategy(PaintingStrategy.ARROW_DOWN);

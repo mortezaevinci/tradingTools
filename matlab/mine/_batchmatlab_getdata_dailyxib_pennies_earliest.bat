@@ -1,0 +1,2 @@
+matlab -batch "getdata_IB_generic_config_dailyx1y_pennies_earliest;getdata_IB_generic;exit"
+exit

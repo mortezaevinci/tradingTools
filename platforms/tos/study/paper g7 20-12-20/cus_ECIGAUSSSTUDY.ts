@@ -1,0 +1,136 @@
+#hint: Expansion Contraction Indicator (ECI): \n ECI Identifies areas of price compression which leads to price expansion. ECI doesn't show the direction of a trend but does indicate when a trend is going to resume (price flagging) or if a change in trend polarity is happening.\n ECI plots the areas where price becomes compressed with colored and clouded bands. The indicator also leaves legacy points in areas of past compression.
+# ECI is based on the FE algorithm
+# Original plot style by Mobius
+# Note: Default Lengths are not optimized. My personal experience has been length ranges between 8 and 13 are generally effective.
+# Here's another way to look at Fractal Energy. This study plots it on the chart graph with clouded areas for the current price compression, exhaustion area and leaves colored points as a legacy plot for past areas.
+# Good CSA choices with this study are:
+# ECI + SuperTrend + Fractal Pivots
+# ECI + SuperTrend + RSI in Laguerre Time
+# ECI + SuperTrend + Standard Deviation Bands
+# ECI + Linear Regression Standard Deviation Bands
+# This version Modified to filter price to a normalized distribution
+
+# User Inputs
+input EciLength = 14; #hint EciLength: Length for calculations.
+input AvgLength = 10; #hint AvgLength: Length for smoothing.
+input AvgType = AverageType.Simple; #hint AvgType: Average Type
+input MeanValue = HL2; #hint MeanValue: Point of origen.
+input DisplayPoints = yes; #hint DisplayPoints: No Points.
+input OnExpansion = yes; #hint OnExpansion: Line extensions.
+
+# Variables
+script g {
+    input data = close;
+    def w = (2 * Double.Pi / 8);
+    def beta = (1 - Cos(w)) / (Power(1.414, 2.0 / 4) - 1 );
+    def alpha = (-beta + Sqrt(beta * beta + 2 * beta));
+    def G = Power(alpha, 4) * data +
+                 4 * (1 – alpha) * G[1] – 6 * Power( 1 - alpha, 2 ) * G[2] +
+                 4 * Power( 1 - alpha, 3 ) * G[3] - Power( 1 - alpha, 4 ) * G[4];
+    plot Line = G;
+}
+def o = g(data = open);
+def h = g(data = high);
+def l = g(data = low);
+def c = g(data = close);
+def bar = BarNumber();
+def HMax = Highest(Max(h, c[1]), EciLength);
+def LMax = Lowest(Min(l, c[1]), EciLength);
+def TR = HMax - LMax;
+def ECI = Round((Log(Sum(TrueRange(h, c, l), EciLength) / TR) /
+         Log(EciLength)) / TickSize(), 0) * TickSize();
+def Avg = MovingAverage(AverageType = AvgType, ECI, AvgLength);
+def S1 = if ECI crosses above Avg
+         then MeanValue
+         else S1[1];
+def S = ECI > Avg;
+def SBars = if ECI > Avg
+            then bar
+            else Double.NaN;
+def StartBar = if ECI crosses above Avg
+               then bar
+               else StartBar[1];
+def LastSBar = if ECI crosses below Avg
+               then bar
+               else LastSBar[1];
+def PP = if ECI crosses above Avg
+         then MeanValue
+         else PP[1];
+def Mean_Limit = if bar != StartBar
+                 then bar - StartBar
+                 else if bar == StartBar
+                      then Double.NaN
+                      else Mean_Limit[1];
+def SHigh = if ECI crosses above Avg
+            then h
+            else SHigh[1];
+def SHighBar = if S and
+                  h == SHigh
+               then bar
+               else SHighBar[1];
+def SHigh_Limit = if bar == StartBar
+                  then Double.NaN
+                  else if bar > StartBar
+                       then bar - SHighBar
+                       else SHigh_Limit[1];
+def SLow = if ECI crosses above Avg
+           then l
+           else SLow[1];
+def SLowBar = if S and
+                  l == SLow
+              then bar
+              else SLowBar[1];
+def SLow_Limit = if bar == StartBar
+                 then Double.NaN
+                 else if bar > StartBar
+                      then bar - SLowBar
+                      else SLow_Limit[1];
+# Internal Script Reference
+script LinePlot {
+    input LineLimit = 0;
+    input OnExpansion = yes;
+    input data = close;
+    input bar = 0;
+    def ThisBar = HighestAll(bar);
+    def cLine = if bar == ThisBar
+                then data
+                else Double.NaN;
+    def cond1 = CompoundValue(1, if IsNaN(data)
+                                 then cond1[1]
+                                 else data, data);
+    plot P = if ThisBar - LineLimit <= bar
+             then HighestAll(cLine)
+             else Double.NaN;
+    plot ExpLine = if OnExpansion and
+                     IsNaN(data[-1])
+                   then cond1
+                   else Double.NaN;
+}
+# Plots
+plot SD_Pivot = LinePlot(data = PP, LineLimit = Mean_Limit, OnExpansion = OnExpansion, bar = StartBar).P;
+plot SD_Pivot_X = LinePlot(data = PP, LineLimit = StartBar).ExpLine;
+     SD_Pivot.SetDefaultColor(Color.CYAN);
+     SD_Pivot_X.SetDefaultColor(Color.CYAN);
+plot SD_R1 = LinePlot(data = SHigh, LineLimit = SHigh_Limit, OnExpansion = OnExpansion, bar = SHighBar).P;
+plot SD_R1_X = LinePlot(data = SHigh, LineLimit = SHigh_Limit).ExpLine;
+     SD_R1.SetDefaultColor(Color.Light_GREEN);
+     SD_R1_X.SetDefaultColor(Color.Light_GREEN);
+plot SD_S1 = LinePlot(data = SLow, LineLimit = SLow_Limit, OnExpansion = OnExpansion, bar = SLowBar).P;
+plot SD_S1_X = LinePlot(data = SLow, LineLimit = SLow_Limit).ExpLine;
+     SD_S1.SetDefaultColor(Color.Light_RED);
+     SD_S1_X.SetDefaultColor(Color.Light_RED);
+plot SPlot = if S
+             then S1 #l - (2 * TickSize())
+             else Double.NaN;
+     SPlot.SetHiding(!DisplayPoints);
+     SPlot.SetPaintingStrategy(PaintingStrategy.POINTS);
+     SPlot.SetLineWeight(1);
+     SPlot.SetDefaultColor(Color.Yellow);
+addCloud(SD_pivot, SD_R1, CreateColor(50,150,75), CreateColor(50,150,70));
+addCloud(SD_S1, SD_pivot, CreateColor(175,0,50), CreateColor(175,0,50));
+addCloud(SD_pivot_X, SD_R1_X, CreateColor(50,150,75), CreateColor(50,150,70));
+addCloud(SD_S1_X, SD_pivot_X, CreateColor(175,0,50), CreateColor(175,0,50));
+# Audible Alerts
+Alert(ECI crosses below Avg, "Exit", Alert.BAR, Sound.Bell);
+AddLabel(1, "Energy Level = " + ECI, color.white);
+# End Code Modified ECI

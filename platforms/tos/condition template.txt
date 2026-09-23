@@ -1,0 +1,41 @@
+set breakout by SMA short to denoise
+
+
+cus_denoisevalue()
+
+
+
+
+
+
+
+
+
+
+
+cus_denoisevalue():
+
+
+(
+Fundamental(FundamentalType.CLOSE, period = AggregationPeriod.MIN)
++
+Fundamental(FundamentalType.OPEN, period = AggregationPeriod.MIN)
++
+(bid+ask)/2)
+/3
+
+
+
+
+
+
+
+
+
+
+
+
+
+*****************
+
+SimpleMovingAvg("length" = 3)."SMA"

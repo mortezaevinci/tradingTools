@@ -1,0 +1,1 @@
+plot Data = high[1];

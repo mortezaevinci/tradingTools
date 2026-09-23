@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IB\OrderDefinition\IBControlDefinition.csproj" />
+    <ProjectReference Include="..\..\temp TWS API\source\CSharpClient\client\CSharpAPI.csproj" />
+    <ProjectReference Include="..\ContractDefinition\ContractDefinition.csproj" />
+    <ProjectReference Include="..\OrderDefinition_\OrderDefinition.csproj" />
+    <ProjectReference Include="..\TradeExtensionExternalCondtion\TradeExtension.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>

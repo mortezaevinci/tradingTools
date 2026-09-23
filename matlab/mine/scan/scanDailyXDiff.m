@@ -1,0 +1,157 @@
+function contractTriggers=scanDailyXDiff(base,base_profiling,contracts,date0,method,doalldates,genfigsdaily)
+
+methods={'pre-comprehensive','pre-explosivevol','pre-aggresivevol','pre-xaggresivevol'};
+if (genfigsdaily)
+    figures=['M:\temp\figures_xscan_' ' ' methods{method} ' ' date0 '\'];
+    if (~exist(figures))
+        mkdir (figures);
+    end
+    close all
+    f=figure%('Visible','off');
+    f.WindowState = 'maximized';
+end
+
+ctfn=[base_profiling 'contractTriggers' ' ' methods{method} ' ' date0 '.mat'];
+
+%contracts_penniesm2_trade;
+%contracts=genContractsFromSymbols('ISR,GHSI,CHNG,TATT,DBVT,SNDL,ORTX,NMTR,CCNC,ACB,TLRY,YOLO,ACEV,ASRT,CLVR,ATIF,EYES,MSOS,MARA,HEXO');
+%contracts=genContractsFromSymbols('ISR');
+%contracts=genContractsFromSymbols('SOS,OGEN ,FTFT,CBAT,XNET,NCTY,PLUG,CNET,SRAX,SUNW,MARA,CVAC,FCEL,JT,SNGX,SGRP,SOL,EDUC,TH,IEA');
+%contracts=genContractsFromSymbols('GOVX');
+nc=numel(contracts);
+
+types={'daily 1y','dailyx1y'};
+
+disp('generating contract triggers');
+clear contractTriggers;
+
+endd=0;
+if (doalldates==1);endd=400;end
+iterDates=datestr((datetime(date0)-days(endd:-1:0))','yyyymmdd');
+for id=1:size(iterDates,1)
+    contractTriggers.(['d' iterDates(id,:)])=NewContractTriggersFromContracts(contracts);
+end
+entryForTomorrows=struct();
+
+%possibletriggers need to change to contractTriggers in SCAN to be compatible with
+%contracts (indexing wise). Here it is fine because we are collecting
+%multiple triggers at different dates
+clear ttd;
+for ci=1:nc
+    try
+        
+        symbol=contracts{ci}.FileSymbol;
+        fprintf('%d/%d\t%s ',ci,nc,symbol);
+        
+        datanotfound=0;
+        for i=1:2
+            fn=[base symbol '\' symbol ' ' types{i} ' ' date0 '.mat'];
+            if (~exist(fn))
+                fprintf('Data not found.\n');
+                datanotfound=1;
+                continue;
+            end
+            load(fn)
+            ttd{i}=table2timetable(td);
+        end
+        
+        if (datanotfound)
+            continue;
+        end
+        
+        %xxxmor, this is tricky need more sanity check here
+        % Should certainly contain date0!!
+        % should contain some 30 last days... maybe the rest can be ignored
+        % a bit
+        dates=intersect(ttd{1}.Date,ttd{2}.Date);
+        ttd{1}=ttd{1}(dates,:);
+        ttd{2}=ttd{2}(dates,:);
+        if (doalldates==1)
+            beginInd=1;
+        else
+            beginInd=numel(dates);
+        end
+        endInd=numel(dates);
+        
+        voldiff=ttd{2}.Volume-ttd{1}.Volume;
+        ttd{1}.Volume=voldiff;
+        
+        if (method==1)
+            [thresh,entry,nextDayEntryCheck,priorientry]=strategy_swing_xdiff_comprehensinve(ttd{2},voldiff);
+        end
+        if (method==2)
+            [thresh,entry,nextDayEntryCheck,priorientry]=strategy_swing_xdiff_explosivevol(ttd{2},voldiff);
+        end
+        if (method==3)
+            [thresh,entry,nextDayEntryCheck,priorientry]=strategy_swing_xdiff_aggresivevol(ttd{2},voldiff);
+        end
+        if (method==4)
+            [thresh,entry,nextDayEntryCheck,priorientry]=strategy_swing_xdiff_xaggresivevol(ttd{2},voldiff);
+        end
+        
+        
+        entryForTomorrow= entry & priorientry==0;
+        enteredTomorrow= entryForTomorrow & nextDayEntryCheck;
+        datesForTomorrow=shiftpad(ttd{2}.Date,-1);
+        
+        hasenteredTomorrow=sum(entryForTomorrow(beginInd:endInd))>0;
+        if (hasenteredTomorrow)
+            fprintf(' Order!');
+            if (genfigsdaily==1)
+                title(symbol);
+                fg=[figures symbol ' ' date0 '.png'];
+                eplot=entryForTomorrow.*thresh.EntryStp;
+                edplot=enteredTomorrow.*thresh.EntryStp;
+                ax=cndlv(ttd{2});
+                hold (ax{2},'on');
+                plot(ax{2},datesForTomorrow,thresh.DiffVolAve);
+                plot(ax{2},datesForTomorrow,thresh.DiffVolMax);
+                hold (ax{1},'on');
+                plot(ax{1},datesForTomorrow,thresh.EntryStp,'g');
+                plot(ax{1},datesForTomorrow,thresh.EntryLmt,'g-');
+                plot(ax{1},datesForTomorrow,thresh.Target1,'r-');
+                plot(ax{1},datesForTomorrow,thresh.Target2,'r-');
+                plot(ax{1},datesForTomorrow,thresh.EntryStp-thresh.TrailAmt,'r');
+                
+                plot(ax{1},datesForTomorrow,eplot,'c+','MarkerSize',20);
+                plot(ax{1},datesForTomorrow,edplot,'m+','MarkerSize',20);
+                saveas(f,fg);
+                clf(f,'reset')
+            end
+            
+        end
+        
+        for i=beginInd:endInd
+            
+            datestring=datestr(datesForTomorrow(i),'yyyymmdd');
+            contractTriggers.(['d' datestring])(ci,:).ThDiffVolMax=thresh.DiffVolMax(i);
+            contractTriggers.(['d' datestring])(ci,:).ThMaxHigh=thresh.MaxHigh(i);
+            contractTriggers.(['d' datestring])(ci,:).ThVol=thresh.Vol(i);
+            contractTriggers.(['d' datestring])(ci,:).ThVolRate=thresh.VolRate(i);
+            contractTriggers.(['d' datestring])(ci,:).ThAbsVol=thresh.AbsVol(i);
+            contractTriggers.(['d' datestring])(ci,:).ThEntryStp=thresh.EntryStp(i);
+            contractTriggers.(['d' datestring])(ci,:).ThEntryLmt=thresh.EntryLmt(i);
+            contractTriggers.(['d' datestring])(ci,:).ThDiffVolAve=thresh.DiffVolAve(i);
+            contractTriggers.(['d' datestring])(ci,:).ThMAtr=thresh.matr(i);
+            contractTriggers.(['d' datestring])(ci,:).ThTrailAmt=thresh.TrailAmt(i);
+            contractTriggers.(['d' datestring])(ci,:).ThTarget1=thresh.Target1(i); %for now xpecting a constant 75% profit. This should become dynamic based on previous tops and such
+            contractTriggers.(['d' datestring])(ci,:).ThTarget2=thresh.Target2(i); %for now xpecting a constant 75% profit. This should become dynamic based on previous tops and such
+            contractTriggers.(['d' datestring])(ci,:).ThTarget=thresh.Target(i); %for now xpecting a constant 75% profit. This should become dynamic based on previous tops and such
+            contractTriggers.(['d' datestring])(ci,:).ThStpLmtDiffPerc=thresh.stpLmtDiffPerc(i);
+            if (entryForTomorrow(i))
+                contractTriggers.(['d' datestring])(ci,:).Marked=1;
+                if (enteredTomorrow(i))
+                    entryForTomorrows.(['d' datestring])(ci)=entryForTomorrow(i);
+                end
+            end
+            
+        end
+        fprintf('\n');
+    catch exception
+        dumpReport('error.log', exception)
+    end
+end
+save(ctfn,'contractTriggers','entryForTomorrows');
+
+
+end

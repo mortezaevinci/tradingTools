@@ -1,0 +1,384 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using NUnit.Framework;
+using System.Threading;
+
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+
+
+
+
+        public Form1()
+        {
+            InitializeComponent();
+
+
+
+        }
+
+        /*
+        private void doit()
+        {
+            Console.WriteLine("completeed");
+
+         
+            HtmlElementCollection el = doc.GetElementsByTagName("input");
+
+            foreach (HtmlElement btn in el)
+            {
+                if (btn.GetAttribute("id") == "txtUserName")
+                {
+                    btn.SetAttribute("value", "mortezahaydari");
+                    break;
+                }
+            }
+
+            foreach (HtmlElement btn in el)
+            {
+                if (btn.GetAttribute("id") == "txtPassword")
+                {
+                    btn.SetAttribute("value", "haymor968hay");
+                    break;
+                }
+            }
+
+            %clickById("btnLogin");
+        }
+        */
+
+
+
+
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void WebBrowser_NewWindow(object sender, CancelEventArgs e)
+        {
+
+            // e.Cancel = true;
+            // Console.WriteLine(webBrowser.StatusText);
+            // webBrowser.Navigate(webBrowser.StatusText);
+
+
+        }
+
+        private void WebBrowser_DocumentCompleted_1(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private IWebDriver driver;
+        public string homeURL;
+
+        [Test(Description = "Check SauceLabs Homepage for Login Link")]
+        public void Login_is_on_home_page()
+        {
+
+            homeURL = "https://data.nasdaq.com/BookViewer.aspx";
+            driver.Navigate().GoToUrl(homeURL);
+            WebDriverWait wait = new WebDriverWait(driver,
+            System.TimeSpan.FromSeconds(15));
+
+
+        }
+
+        [TearDown]
+        public void TearDownTest()
+        {
+            
+            driver.Close();
+        }
+
+        [SetUp]
+        public void SetupTest()
+        {
+            driver = new ChromeDriver();
+
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            SetupTest();
+        }
+
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            Login_is_on_home_page();
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            TearDownTest();
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            String name = "Charles";
+
+            driver.FindElement(By.Id("txtUserName")).SendKeys("mortezahaydari");
+            driver.FindElement(By.Id("txtPassword")).SendKeys("haymor968hay" + OpenQA.Selenium.Keys.Enter);
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            driver.FindElement(By.Id("PageContent_btnLaunchBv3")).Click();
+
+
+        }
+
+        public void switchtopopup()
+        {
+            IReadOnlyList<String> windows = driver.WindowHandles;
+            string currentwindow = driver.CurrentWindowHandle;
+
+            // To handle all new opened window.				
+            foreach (string window in windows)
+            {
+
+                Console.WriteLine(window);
+
+                if (!currentwindow.Equals(window))
+                {
+                    // Switching to Child window
+                    driver.SwitchTo().Window(window);
+                    try
+                    {
+
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("error in id");
+                    }
+                }
+
+
+            }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            switchtopopup();
+        }
+        IWebElement we;
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            IReadOnlyList<IWebElement> wes = null;
+
+            try
+            {
+                Console.WriteLine("by xpath");
+                we = driver.FindElement(By.XPath(textBox1.Text));
+                Console.WriteLine(we.Text);
+                Console.WriteLine("all:");
+                Console.WriteLine("by xpath");
+                wes = driver.FindElements(By.XPath(textBox1.Text));
+                Console.WriteLine("count={0}",wes.Count());
+                foreach(IWebElement w in wes)
+                {
+                    Console.WriteLine("element:");
+                    Console.WriteLine(w.Text);
+
+                    Console.WriteLine("following:");
+                    Console.WriteLine(w.FindElement(By.XPath("following-sibling::*")).Text);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                // Console.WriteLine("error in id");
+            }
+
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenQA.Selenium.Support.UI.SelectElement select = new OpenQA.Selenium.Support.UI.SelectElement(we);
+                select.SelectByValue("120");
+
+            }
+            catch { }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                we.Click();
+            }
+            catch { }
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                we.SendKeys(OpenQA.Selenium.Keys.Space);
+            }
+            catch { }
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                we.SendKeys(textBox1.Text);
+            }
+            catch { }
+        }
+
+        public void setupBookViewer(string symbol, string filterlimit)
+        {
+            
+            string limit = "500";
+
+            int sleepshort = 25;
+            int sleepmed = 100;
+            int sleeplong = 350;
+
+            bool[] values = { false, false, true, true, true, true, false, true, true, true, false, false, true, false };
+            string[] turnon = { "Orders", "Shares", "Total", "BID", "ASK" };
+            IReadOnlyList<IWebElement> ws;
+            IWebElement w;
+            string xpath;
+            try
+            {
+                SetupTest();
+
+
+                Login_is_on_home_page();
+
+                String name = "Charles";
+                Thread.Sleep(sleeplong);
+                driver.FindElement(By.Id("txtUserName")).SendKeys("mortezahaydari");
+                driver.FindElement(By.Id("txtPassword")).SendKeys("haymor968hay" + OpenQA.Selenium.Keys.Enter);
+                Thread.Sleep(sleeplong);
+                driver.FindElement(By.Id("PageContent_btnLaunchBv3")).Click();
+                Thread.Sleep(sleeplong);
+                switchtopopup();
+
+                Thread.Sleep(sleepmed);
+
+                w = driver.FindElement(By.Id("mpid-input"));
+                w.Clear();
+                w.SendKeys(symbol + OpenQA.Selenium.Keys.Enter);
+
+                Thread.Sleep(sleepshort);
+                //ws = driver.FindElements(By.XPath(textBox1.Text));
+                xpath = "//button[@data-ng-click='toggleAdv()']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+                Thread.Sleep(sleepshort);
+                xpath = "//input[@data-ng-model='filters.buyVolumeMin']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Clear();
+                w.SendKeys(limit);
+                Thread.Sleep(sleepmed);
+                xpath = "//input[@data-ng-model='filters.sellVolumeMin']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Clear();
+                w.SendKeys(limit);
+                Thread.Sleep(sleepmed);
+                xpath = "//button[@data-ng-click='sellBtnGo()']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+                Thread.Sleep(sleepshort);
+                xpath = "//button[@data-ng-click='toggleAdv()']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+                Thread.Sleep(sleepshort);
+                xpath = "//input[@data-ng-change='aggregatedByPrice()']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+
+                Thread.Sleep(sleepshort);
+                xpath = "//select[@data-ng-change='toggleFilter()']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+                w.SendKeys("120");
+                w.Click();
+                Thread.Sleep(sleepmed);
+                xpath = "//button[@uib-popover-template='userColumnsSelections.templateUrl']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+                Thread.Sleep(sleeplong);
+                xpath = "//input[@type='checkbox' and @title='item']";
+                ws = driver.FindElements(By.XPath(xpath));
+                Console.WriteLine("count of ws is {0}", ws.Count());
+                if (ws.Count() == 14)
+                {
+
+                    for (int i = 0; i < 14; i++)
+                    {
+                        string ss = ws[i].FindElement(By.XPath("following-sibling::*")).Text;
+                        bool status = false;
+                        for (int si=0;si<turnon.Count();si++)
+                        {
+                            if (ss.Contains(turnon[si])) { status = true;break; }
+                        }
+
+                        Thread.Sleep(sleepshort);
+                        SetCheckBox(ws[i], status);
+                    }
+                }
+                Thread.Sleep(sleeplong);
+                xpath = "//div[@ng-click='saveColumnSettings()']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+                Thread.Sleep(sleeplong);
+                xpath = "//button[@data-ng-click='actionMethod()']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+                Thread.Sleep(sleeplong);
+                xpath = "//button[@uib-popover-template='userColumnsSelections.templateUrl']";
+                w = driver.FindElement(By.XPath(xpath));
+                w.Click();
+
+            }
+            catch { }
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            setupBookViewer("AMD", "50");
+        }
+
+        public void SetCheckBox(IWebElement w, bool value)
+        {
+            //Console.Write("checkbox state : " + checkbox_Address.Selected);  
+            if (!value && w.Selected)
+            {
+                w.Click();
+            }
+            else if (value && !w.Selected)
+            {
+
+                w.Click();
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+graphing snappedpap is crudely minute based, and needs to be done differently to be scaleable.

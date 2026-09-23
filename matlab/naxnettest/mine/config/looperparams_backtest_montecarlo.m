@@ -1,0 +1,10 @@
+looperParams.symbols={'AAL'};
+looperParams.runOnce=1;
+looperParams.graph.saveFigures=0;
+looperParams.graph.show=0; %1 show if signals, 2 alwways show
+looperParams.date=basedate;
+looperParams.getdatainit=1;
+looperParams.getalldatainrealtime=0;
+looperParams.updaterealtime=0;
+looperParams.graph.showlimit=390;
+looperParams.processlimit=0;

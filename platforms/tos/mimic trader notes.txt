@@ -1,0 +1,10 @@
+* do NOT use auto-send quick forms to test anything at all. ONLY buy and sell button.
+* check that underlying matches set options in each quick form. Make sure left is call ,adn right is put, and at proper levels.
+* reset levels in quick bars at 9:15.
+* Before pressing buy/sell, look at underlying and make sure it is the desired one.
+*In monitor, to see chart of option use add to quick chart.
+* before start, setup the quick chart.
+* If using any automated order to buy options, make sure the option matches (in quantity, and strike) to the one chosen for quick forms, so that it can be sold quickly.
+* Add all options in quick forms to watch list before start. 
+* In mimic order setup, have thumbnails for charts with different colors.
+* Once anything is purchased, next thing to do is to send the bought one to a thumb chart.

@@ -1,0 +1,7 @@
+to convert from symbols to contract
+
+
+in sublime with regex replace from
+(?=')(.[^,]*)(?<=')
+to
+genContract($1)

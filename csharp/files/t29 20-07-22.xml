@@ -1,0 +1,3132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IBControlDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <port>7497</port>
+  <ClientId>1</ClientId>
+  <orderWatchlists>
+    <OrderWatchlist>
+      <contractDefinitions>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AAL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>11</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>139673266</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>12.55</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AAPL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>385</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>265598</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>380</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AMD</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>55</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>4391</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>60</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AMZN</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>3300</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>3691937</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>2900</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>NET</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>35</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>NET   200710C00042000</LocalSymbol>
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>382633646</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>42</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>GILD</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>75</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>269753</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>80</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>DIS</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>118</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>6459</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>120</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>FB</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>240</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>107113386</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>246.11</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>NFLX</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>490</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>15124833</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>525</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>NVDA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>410</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>4815747</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>402.01</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>ROKU</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>150</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>290651477</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>140</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>TSLA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>1700</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>76792991</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>1200</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>WMT</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>130</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>13824</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>130</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>BYND</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>130</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>364036112</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>150</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>NKLA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>40</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>425175609</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>55</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>SPY</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>325</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>756733</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>320</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AAL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>12</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>139673266</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>12</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AAPL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>390</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>265598</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>300</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AMD</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>58</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>4391</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>50</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>AMZN</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>3000</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>3691937</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>2600</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>BA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>180</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>4762</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>170</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>DAL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>27</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>0</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>22</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>DIS</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>118</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>6459</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>100</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>FB</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>245</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>107113386</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>220</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>NFLX</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>495</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>15124833</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>400</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>NVDA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>420</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>4815747</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>370</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>ROKU</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>155</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>290651477</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>120</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>TSLA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>1500</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>76792991</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>1320</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>WMT</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>132</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>13824</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>110</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>BYND</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>130</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>364036112</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>135</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>SPY</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>325</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>756733</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>315</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>NKLA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>40</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>425175609</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>50</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>UAL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>33</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol />
+            <PrimaryExch />
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>79498203</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>28</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>DAL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>26</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>44001820</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>28</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>PEP</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>130</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>11017</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>140</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>GS</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>210</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>4627828</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>200</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>JPM</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>98</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>JPM   200717C00100000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>1520593</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>100</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>HD</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>260</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>HD    200717C00260000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>7930</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>260</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>MSFT</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>210</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>272093</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>220</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>BABA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>260</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>BABA  200717P00240000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>166090175</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>239</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>DELL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>60</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>DELL  200717C00058000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>346218218</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>58</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>BILI</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>43</Strike>
+            <Right>Put</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>BILI  200717P00040000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <ConId>311571413</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>39</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>MRNA</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>80</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>MRNA  200724C00095000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>0</ConId>
+              <Price>1</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>PYPL</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>175</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>PYPL  200724C00175000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>199169591</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>176</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+        <ContractDefinition>
+          <name />
+          <contract>
+            <ConId>0</ConId>
+            <Symbol>ABT</Symbol>
+            <SecType>OPT</SecType>
+            <LastTradeDateOrContractMonth>20200724</LastTradeDateOrContractMonth>
+            <Strike>97</Strike>
+            <Right>Call</Right>
+            <Exchange>SMART</Exchange>
+            <Currency>USD</Currency>
+            <LocalSymbol>ABT   200724C00100000</LocalSymbol>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </contract>
+          <underlying>
+            <ConId>0</ConId>
+            <Strike>0</Strike>
+            <IncludeExpired>false</IncludeExpired>
+            <ComboLegs />
+          </underlying>
+          <conditions>
+            <OperatorCondition xsi:type="PriceCondition">
+              <Type>Price</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <ConId>4065</ConId>
+              <Exchange>SMART</Exchange>
+              <Price>100.01</Price>
+              <TriggerMethod>Default</TriggerMethod>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>true</IsMore>
+              <Time>20200722 09:33:00 EST</Time>
+            </OperatorCondition>
+            <OperatorCondition xsi:type="TimeCondition">
+              <Type>Time</Type>
+              <IsConjunctionConnection>true</IsConjunctionConnection>
+              <IsMore>false</IsMore>
+              <Time>20200722 11:00:00 EST</Time>
+            </OperatorCondition>
+          </conditions>
+        </ContractDefinition>
+      </contractDefinitions>
+      <orderDefinitions>
+        <OrderDefinition>
+          <name>BUY MKT</name>
+          <order>
+            <OrderId>0</OrderId>
+            <Solicited>false</Solicited>
+            <ClientId>0</ClientId>
+            <PermId>0</PermId>
+            <Action>BUY</Action>
+            <TotalQuantity>4</TotalQuantity>
+            <OrderType>SNAP MKT</OrderType>
+            <LmtPrice>1.7976931348623157E+308</LmtPrice>
+            <AuxPrice>0</AuxPrice>
+            <Tif>DAY</Tif>
+            <OcaGroup />
+            <OcaType>0</OcaType>
+            <OrderRef />
+            <Transmit>true</Transmit>
+            <ParentId>0</ParentId>
+            <BlockOrder>false</BlockOrder>
+            <SweepToFill>false</SweepToFill>
+            <DisplaySize>0</DisplaySize>
+            <TriggerMethod>0</TriggerMethod>
+            <OutsideRth>false</OutsideRth>
+            <Hidden>false</Hidden>
+            <GoodAfterTime />
+            <GoodTillDate />
+            <OverridePercentageConstraints>false</OverridePercentageConstraints>
+            <Rule80A />
+            <AllOrNone>false</AllOrNone>
+            <MinQty>2147483647</MinQty>
+            <PercentOffset>1.7976931348623157E+308</PercentOffset>
+            <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+            <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+            <FaGroup />
+            <FaProfile />
+            <FaMethod />
+            <FaPercentage />
+            <OpenClose />
+            <Origin>0</Origin>
+            <ShortSaleSlot>0</ShortSaleSlot>
+            <DesignatedLocation />
+            <ExemptCode>-1</ExemptCode>
+            <DiscretionaryAmt>0</DiscretionaryAmt>
+            <ETradeOnly>false</ETradeOnly>
+            <FirmQuoteOnly>false</FirmQuoteOnly>
+            <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+            <OptOutSmartRouting>false</OptOutSmartRouting>
+            <AuctionStrategy>0</AuctionStrategy>
+            <StartingPrice>1.7976931348623157E+308</StartingPrice>
+            <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+            <Delta>1.7976931348623157E+308</Delta>
+            <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+            <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+            <Volatility>1.7976931348623157E+308</Volatility>
+            <VolatilityType>0</VolatilityType>
+            <ContinuousUpdate>0</ContinuousUpdate>
+            <ReferencePriceType>0</ReferencePriceType>
+            <DeltaNeutralOrderType />
+            <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+            <DeltaNeutralConId>0</DeltaNeutralConId>
+            <DeltaNeutralSettlingFirm />
+            <DeltaNeutralClearingAccount />
+            <DeltaNeutralClearingIntent />
+            <DeltaNeutralOpenClose />
+            <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+            <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+            <DeltaNeutralDesignatedLocation />
+            <BasisPoints>1.7976931348623157E+308</BasisPoints>
+            <BasisPointsType>2147483647</BasisPointsType>
+            <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+            <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+            <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+            <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+            <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+            <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+            <ScaleAutoReset>false</ScaleAutoReset>
+            <ScaleInitPosition>2147483647</ScaleInitPosition>
+            <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+            <ScaleRandomPercent>false</ScaleRandomPercent>
+            <HedgeType />
+            <HedgeParam />
+            <Account />
+            <AlgoParams />
+            <WhatIf>false</WhatIf>
+            <NotHeld>false</NotHeld>
+            <SmartComboRoutingParams />
+            <OrderComboLegs />
+            <OrderMiscOptions />
+            <ActiveStartTime />
+            <ActiveStopTime />
+            <ScaleTable />
+            <ModelCode />
+            <ExtOperator />
+            <CashQty>1.7976931348623157E+308</CashQty>
+            <Mifid2DecisionMaker />
+            <Mifid2DecisionAlgo />
+            <Mifid2ExecutionTrader />
+            <Mifid2ExecutionAlgo />
+            <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+            <AutoCancelDate />
+            <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+            <RefFuturesConId>2147483647</RefFuturesConId>
+            <AutoCancelParent>false</AutoCancelParent>
+            <Shareholder />
+            <ImbalanceOnly>false</ImbalanceOnly>
+            <RouteMarketableToBbo>false</RouteMarketableToBbo>
+            <ParentPermId>9223372036854775807</ParentPermId>
+            <RandomizeSize>false</RandomizeSize>
+            <RandomizePrice>false</RandomizePrice>
+            <ReferenceContractId>0</ReferenceContractId>
+            <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+            <PeggedChangeAmount>0</PeggedChangeAmount>
+            <ReferenceChangeAmount>0</ReferenceChangeAmount>
+            <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+            <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+            <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+            <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+            <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+            <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+            <Conditions />
+            <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+            <ConditionsCancelOrder>false</ConditionsCancelOrder>
+            <Tier>
+              <Name />
+              <Value />
+              <DisplayName />
+            </Tier>
+            <IsOmsContainer>false</IsOmsContainer>
+            <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+            <UsePriceMgmtAlgo xsi:nil="true" />
+          </order>
+          <childOrderDefinitions>
+            <OrderDefinition>
+              <name>target</name>
+              <order>
+                <OrderId>0</OrderId>
+                <Solicited>false</Solicited>
+                <ClientId>0</ClientId>
+                <PermId>0</PermId>
+                <Action>SELL</Action>
+                <TotalQuantity>4</TotalQuantity>
+                <OrderType>MKT</OrderType>
+                <LmtPrice>1.7976931348623157E+308</LmtPrice>
+                <AuxPrice>0</AuxPrice>
+                <Tif>DAY</Tif>
+                <OcaGroup />
+                <OcaType>0</OcaType>
+                <OrderRef />
+                <Transmit>true</Transmit>
+                <ParentId>0</ParentId>
+                <BlockOrder>false</BlockOrder>
+                <SweepToFill>false</SweepToFill>
+                <DisplaySize>0</DisplaySize>
+                <TriggerMethod>0</TriggerMethod>
+                <OutsideRth>false</OutsideRth>
+                <Hidden>false</Hidden>
+                <GoodAfterTime />
+                <GoodTillDate />
+                <OverridePercentageConstraints>false</OverridePercentageConstraints>
+                <Rule80A />
+                <AllOrNone>false</AllOrNone>
+                <MinQty>2147483647</MinQty>
+                <PercentOffset>1.7976931348623157E+308</PercentOffset>
+                <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+                <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+                <FaGroup />
+                <FaProfile />
+                <FaMethod />
+                <FaPercentage />
+                <OpenClose />
+                <Origin>0</Origin>
+                <ShortSaleSlot>0</ShortSaleSlot>
+                <DesignatedLocation />
+                <ExemptCode>-1</ExemptCode>
+                <DiscretionaryAmt>0</DiscretionaryAmt>
+                <ETradeOnly>false</ETradeOnly>
+                <FirmQuoteOnly>false</FirmQuoteOnly>
+                <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+                <OptOutSmartRouting>false</OptOutSmartRouting>
+                <AuctionStrategy>0</AuctionStrategy>
+                <StartingPrice>1.7976931348623157E+308</StartingPrice>
+                <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+                <Delta>1.7976931348623157E+308</Delta>
+                <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+                <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+                <Volatility>1.7976931348623157E+308</Volatility>
+                <VolatilityType>0</VolatilityType>
+                <ContinuousUpdate>0</ContinuousUpdate>
+                <ReferencePriceType>0</ReferencePriceType>
+                <DeltaNeutralOrderType />
+                <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+                <DeltaNeutralConId>0</DeltaNeutralConId>
+                <DeltaNeutralSettlingFirm />
+                <DeltaNeutralClearingAccount />
+                <DeltaNeutralClearingIntent />
+                <DeltaNeutralOpenClose />
+                <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+                <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+                <DeltaNeutralDesignatedLocation />
+                <BasisPoints>1.7976931348623157E+308</BasisPoints>
+                <BasisPointsType>2147483647</BasisPointsType>
+                <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+                <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+                <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+                <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+                <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+                <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+                <ScaleAutoReset>false</ScaleAutoReset>
+                <ScaleInitPosition>2147483647</ScaleInitPosition>
+                <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+                <ScaleRandomPercent>false</ScaleRandomPercent>
+                <HedgeType />
+                <HedgeParam />
+                <Account />
+                <AlgoParams />
+                <WhatIf>false</WhatIf>
+                <NotHeld>false</NotHeld>
+                <SmartComboRoutingParams />
+                <OrderComboLegs />
+                <OrderMiscOptions />
+                <ActiveStartTime />
+                <ActiveStopTime />
+                <ScaleTable />
+                <ModelCode />
+                <ExtOperator />
+                <CashQty>1.7976931348623157E+308</CashQty>
+                <Mifid2DecisionMaker />
+                <Mifid2DecisionAlgo />
+                <Mifid2ExecutionTrader />
+                <Mifid2ExecutionAlgo />
+                <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+                <AutoCancelDate />
+                <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+                <RefFuturesConId>2147483647</RefFuturesConId>
+                <AutoCancelParent>false</AutoCancelParent>
+                <Shareholder />
+                <ImbalanceOnly>false</ImbalanceOnly>
+                <RouteMarketableToBbo>false</RouteMarketableToBbo>
+                <ParentPermId>9223372036854775807</ParentPermId>
+                <RandomizeSize>false</RandomizeSize>
+                <RandomizePrice>false</RandomizePrice>
+                <ReferenceContractId>0</ReferenceContractId>
+                <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+                <PeggedChangeAmount>0</PeggedChangeAmount>
+                <ReferenceChangeAmount>0</ReferenceChangeAmount>
+                <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+                <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+                <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+                <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+                <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+                <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+                <Conditions />
+                <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+                <ConditionsCancelOrder>false</ConditionsCancelOrder>
+                <Tier>
+                  <Name />
+                  <Value />
+                  <DisplayName />
+                </Tier>
+                <IsOmsContainer>false</IsOmsContainer>
+                <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+                <UsePriceMgmtAlgo xsi:nil="true" />
+              </order>
+              <childOrderDefinitions />
+            </OrderDefinition>
+            <OrderDefinition>
+              <name>stop</name>
+              <order>
+                <OrderId>0</OrderId>
+                <Solicited>false</Solicited>
+                <ClientId>0</ClientId>
+                <PermId>0</PermId>
+                <Action>SELL</Action>
+                <TotalQuantity>4</TotalQuantity>
+                <OrderType>MKT</OrderType>
+                <LmtPrice>1.7976931348623157E+308</LmtPrice>
+                <AuxPrice>0</AuxPrice>
+                <Tif>DAY</Tif>
+                <OcaGroup />
+                <OcaType>0</OcaType>
+                <OrderRef />
+                <Transmit>true</Transmit>
+                <ParentId>0</ParentId>
+                <BlockOrder>false</BlockOrder>
+                <SweepToFill>false</SweepToFill>
+                <DisplaySize>0</DisplaySize>
+                <TriggerMethod>0</TriggerMethod>
+                <OutsideRth>false</OutsideRth>
+                <Hidden>false</Hidden>
+                <GoodAfterTime />
+                <GoodTillDate />
+                <OverridePercentageConstraints>false</OverridePercentageConstraints>
+                <Rule80A />
+                <AllOrNone>false</AllOrNone>
+                <MinQty>2147483647</MinQty>
+                <PercentOffset>1.7976931348623157E+308</PercentOffset>
+                <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+                <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+                <FaGroup />
+                <FaProfile />
+                <FaMethod />
+                <FaPercentage />
+                <OpenClose />
+                <Origin>0</Origin>
+                <ShortSaleSlot>0</ShortSaleSlot>
+                <DesignatedLocation />
+                <ExemptCode>-1</ExemptCode>
+                <DiscretionaryAmt>0</DiscretionaryAmt>
+                <ETradeOnly>false</ETradeOnly>
+                <FirmQuoteOnly>false</FirmQuoteOnly>
+                <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+                <OptOutSmartRouting>false</OptOutSmartRouting>
+                <AuctionStrategy>0</AuctionStrategy>
+                <StartingPrice>1.7976931348623157E+308</StartingPrice>
+                <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+                <Delta>1.7976931348623157E+308</Delta>
+                <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+                <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+                <Volatility>1.7976931348623157E+308</Volatility>
+                <VolatilityType>0</VolatilityType>
+                <ContinuousUpdate>0</ContinuousUpdate>
+                <ReferencePriceType>0</ReferencePriceType>
+                <DeltaNeutralOrderType />
+                <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+                <DeltaNeutralConId>0</DeltaNeutralConId>
+                <DeltaNeutralSettlingFirm />
+                <DeltaNeutralClearingAccount />
+                <DeltaNeutralClearingIntent />
+                <DeltaNeutralOpenClose />
+                <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+                <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+                <DeltaNeutralDesignatedLocation />
+                <BasisPoints>1.7976931348623157E+308</BasisPoints>
+                <BasisPointsType>2147483647</BasisPointsType>
+                <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+                <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+                <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+                <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+                <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+                <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+                <ScaleAutoReset>false</ScaleAutoReset>
+                <ScaleInitPosition>2147483647</ScaleInitPosition>
+                <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+                <ScaleRandomPercent>false</ScaleRandomPercent>
+                <HedgeType />
+                <HedgeParam />
+                <Account />
+                <AlgoParams />
+                <WhatIf>false</WhatIf>
+                <NotHeld>false</NotHeld>
+                <SmartComboRoutingParams />
+                <OrderComboLegs />
+                <OrderMiscOptions />
+                <ActiveStartTime />
+                <ActiveStopTime />
+                <ScaleTable />
+                <ModelCode />
+                <ExtOperator />
+                <CashQty>1.7976931348623157E+308</CashQty>
+                <Mifid2DecisionMaker />
+                <Mifid2DecisionAlgo />
+                <Mifid2ExecutionTrader />
+                <Mifid2ExecutionAlgo />
+                <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+                <AutoCancelDate />
+                <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+                <RefFuturesConId>2147483647</RefFuturesConId>
+                <AutoCancelParent>false</AutoCancelParent>
+                <Shareholder />
+                <ImbalanceOnly>false</ImbalanceOnly>
+                <RouteMarketableToBbo>false</RouteMarketableToBbo>
+                <ParentPermId>9223372036854775807</ParentPermId>
+                <RandomizeSize>false</RandomizeSize>
+                <RandomizePrice>false</RandomizePrice>
+                <ReferenceContractId>0</ReferenceContractId>
+                <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+                <PeggedChangeAmount>0</PeggedChangeAmount>
+                <ReferenceChangeAmount>0</ReferenceChangeAmount>
+                <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+                <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+                <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+                <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+                <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+                <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+                <Conditions />
+                <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+                <ConditionsCancelOrder>false</ConditionsCancelOrder>
+                <Tier>
+                  <Name />
+                  <Value />
+                  <DisplayName />
+                </Tier>
+                <IsOmsContainer>false</IsOmsContainer>
+                <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+                <UsePriceMgmtAlgo xsi:nil="true" />
+              </order>
+              <childOrderDefinitions />
+            </OrderDefinition>
+          </childOrderDefinitions>
+        </OrderDefinition>
+        <OrderDefinition>
+          <name>BUY MID</name>
+          <order>
+            <OrderId>0</OrderId>
+            <Solicited>false</Solicited>
+            <ClientId>0</ClientId>
+            <PermId>0</PermId>
+            <Action>BUY</Action>
+            <TotalQuantity>4</TotalQuantity>
+            <OrderType>SNAP MID</OrderType>
+            <LmtPrice>1.7976931348623157E+308</LmtPrice>
+            <AuxPrice>0.01</AuxPrice>
+            <Tif>DAY</Tif>
+            <OcaGroup />
+            <OcaType>0</OcaType>
+            <OrderRef />
+            <Transmit>true</Transmit>
+            <ParentId>0</ParentId>
+            <BlockOrder>false</BlockOrder>
+            <SweepToFill>false</SweepToFill>
+            <DisplaySize>0</DisplaySize>
+            <TriggerMethod>0</TriggerMethod>
+            <OutsideRth>false</OutsideRth>
+            <Hidden>false</Hidden>
+            <GoodAfterTime />
+            <GoodTillDate />
+            <OverridePercentageConstraints>false</OverridePercentageConstraints>
+            <Rule80A />
+            <AllOrNone>false</AllOrNone>
+            <MinQty>2147483647</MinQty>
+            <PercentOffset>1.7976931348623157E+308</PercentOffset>
+            <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+            <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+            <FaGroup />
+            <FaProfile />
+            <FaMethod />
+            <FaPercentage />
+            <OpenClose />
+            <Origin>0</Origin>
+            <ShortSaleSlot>0</ShortSaleSlot>
+            <DesignatedLocation />
+            <ExemptCode>-1</ExemptCode>
+            <DiscretionaryAmt>0</DiscretionaryAmt>
+            <ETradeOnly>false</ETradeOnly>
+            <FirmQuoteOnly>false</FirmQuoteOnly>
+            <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+            <OptOutSmartRouting>false</OptOutSmartRouting>
+            <AuctionStrategy>0</AuctionStrategy>
+            <StartingPrice>1.7976931348623157E+308</StartingPrice>
+            <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+            <Delta>1.7976931348623157E+308</Delta>
+            <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+            <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+            <Volatility>1.7976931348623157E+308</Volatility>
+            <VolatilityType>0</VolatilityType>
+            <ContinuousUpdate>0</ContinuousUpdate>
+            <ReferencePriceType>0</ReferencePriceType>
+            <DeltaNeutralOrderType />
+            <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+            <DeltaNeutralConId>0</DeltaNeutralConId>
+            <DeltaNeutralSettlingFirm />
+            <DeltaNeutralClearingAccount />
+            <DeltaNeutralClearingIntent />
+            <DeltaNeutralOpenClose />
+            <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+            <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+            <DeltaNeutralDesignatedLocation />
+            <BasisPoints>1.7976931348623157E+308</BasisPoints>
+            <BasisPointsType>2147483647</BasisPointsType>
+            <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+            <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+            <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+            <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+            <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+            <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+            <ScaleAutoReset>false</ScaleAutoReset>
+            <ScaleInitPosition>2147483647</ScaleInitPosition>
+            <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+            <ScaleRandomPercent>false</ScaleRandomPercent>
+            <HedgeType />
+            <HedgeParam />
+            <Account />
+            <AlgoParams />
+            <WhatIf>false</WhatIf>
+            <NotHeld>false</NotHeld>
+            <SmartComboRoutingParams />
+            <OrderComboLegs />
+            <OrderMiscOptions />
+            <ActiveStartTime />
+            <ActiveStopTime />
+            <ScaleTable />
+            <ModelCode />
+            <ExtOperator />
+            <CashQty>1.7976931348623157E+308</CashQty>
+            <Mifid2DecisionMaker />
+            <Mifid2DecisionAlgo />
+            <Mifid2ExecutionTrader />
+            <Mifid2ExecutionAlgo />
+            <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+            <AutoCancelDate />
+            <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+            <RefFuturesConId>2147483647</RefFuturesConId>
+            <AutoCancelParent>false</AutoCancelParent>
+            <Shareholder />
+            <ImbalanceOnly>false</ImbalanceOnly>
+            <RouteMarketableToBbo>false</RouteMarketableToBbo>
+            <ParentPermId>9223372036854775807</ParentPermId>
+            <RandomizeSize>false</RandomizeSize>
+            <RandomizePrice>false</RandomizePrice>
+            <ReferenceContractId>0</ReferenceContractId>
+            <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+            <PeggedChangeAmount>0</PeggedChangeAmount>
+            <ReferenceChangeAmount>0</ReferenceChangeAmount>
+            <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+            <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+            <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+            <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+            <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+            <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+            <Conditions />
+            <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+            <ConditionsCancelOrder>false</ConditionsCancelOrder>
+            <Tier>
+              <Name />
+              <Value />
+              <DisplayName />
+            </Tier>
+            <IsOmsContainer>false</IsOmsContainer>
+            <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+            <UsePriceMgmtAlgo xsi:nil="true" />
+          </order>
+          <childOrderDefinitions>
+            <OrderDefinition>
+              <name>target</name>
+              <order>
+                <OrderId>0</OrderId>
+                <Solicited>false</Solicited>
+                <ClientId>0</ClientId>
+                <PermId>0</PermId>
+                <Action>SELL</Action>
+                <TotalQuantity>4</TotalQuantity>
+                <OrderType>MKT</OrderType>
+                <LmtPrice>1.7976931348623157E+308</LmtPrice>
+                <AuxPrice>0</AuxPrice>
+                <Tif>DAY</Tif>
+                <OcaGroup />
+                <OcaType>0</OcaType>
+                <OrderRef />
+                <Transmit>true</Transmit>
+                <ParentId>58</ParentId>
+                <BlockOrder>false</BlockOrder>
+                <SweepToFill>false</SweepToFill>
+                <DisplaySize>0</DisplaySize>
+                <TriggerMethod>0</TriggerMethod>
+                <OutsideRth>false</OutsideRth>
+                <Hidden>false</Hidden>
+                <GoodAfterTime />
+                <GoodTillDate />
+                <OverridePercentageConstraints>false</OverridePercentageConstraints>
+                <Rule80A />
+                <AllOrNone>false</AllOrNone>
+                <MinQty>2147483647</MinQty>
+                <PercentOffset>1.7976931348623157E+308</PercentOffset>
+                <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+                <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+                <FaGroup />
+                <FaProfile />
+                <FaMethod />
+                <FaPercentage />
+                <OpenClose />
+                <Origin>0</Origin>
+                <ShortSaleSlot>0</ShortSaleSlot>
+                <DesignatedLocation />
+                <ExemptCode>-1</ExemptCode>
+                <DiscretionaryAmt>0</DiscretionaryAmt>
+                <ETradeOnly>false</ETradeOnly>
+                <FirmQuoteOnly>false</FirmQuoteOnly>
+                <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+                <OptOutSmartRouting>false</OptOutSmartRouting>
+                <AuctionStrategy>0</AuctionStrategy>
+                <StartingPrice>1.7976931348623157E+308</StartingPrice>
+                <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+                <Delta>1.7976931348623157E+308</Delta>
+                <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+                <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+                <Volatility>1.7976931348623157E+308</Volatility>
+                <VolatilityType>0</VolatilityType>
+                <ContinuousUpdate>0</ContinuousUpdate>
+                <ReferencePriceType>0</ReferencePriceType>
+                <DeltaNeutralOrderType />
+                <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+                <DeltaNeutralConId>0</DeltaNeutralConId>
+                <DeltaNeutralSettlingFirm />
+                <DeltaNeutralClearingAccount />
+                <DeltaNeutralClearingIntent />
+                <DeltaNeutralOpenClose />
+                <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+                <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+                <DeltaNeutralDesignatedLocation />
+                <BasisPoints>1.7976931348623157E+308</BasisPoints>
+                <BasisPointsType>2147483647</BasisPointsType>
+                <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+                <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+                <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+                <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+                <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+                <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+                <ScaleAutoReset>false</ScaleAutoReset>
+                <ScaleInitPosition>2147483647</ScaleInitPosition>
+                <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+                <ScaleRandomPercent>false</ScaleRandomPercent>
+                <HedgeType />
+                <HedgeParam />
+                <Account />
+                <AlgoParams />
+                <WhatIf>false</WhatIf>
+                <NotHeld>false</NotHeld>
+                <SmartComboRoutingParams />
+                <OrderComboLegs />
+                <OrderMiscOptions />
+                <ActiveStartTime />
+                <ActiveStopTime />
+                <ScaleTable />
+                <ModelCode />
+                <ExtOperator />
+                <CashQty>1.7976931348623157E+308</CashQty>
+                <Mifid2DecisionMaker />
+                <Mifid2DecisionAlgo />
+                <Mifid2ExecutionTrader />
+                <Mifid2ExecutionAlgo />
+                <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+                <AutoCancelDate />
+                <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+                <RefFuturesConId>2147483647</RefFuturesConId>
+                <AutoCancelParent>false</AutoCancelParent>
+                <Shareholder />
+                <ImbalanceOnly>false</ImbalanceOnly>
+                <RouteMarketableToBbo>false</RouteMarketableToBbo>
+                <ParentPermId>9223372036854775807</ParentPermId>
+                <RandomizeSize>false</RandomizeSize>
+                <RandomizePrice>false</RandomizePrice>
+                <ReferenceContractId>0</ReferenceContractId>
+                <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+                <PeggedChangeAmount>0</PeggedChangeAmount>
+                <ReferenceChangeAmount>0</ReferenceChangeAmount>
+                <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+                <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+                <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+                <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+                <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+                <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+                <Conditions />
+                <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+                <ConditionsCancelOrder>false</ConditionsCancelOrder>
+                <Tier>
+                  <Name />
+                  <Value />
+                  <DisplayName />
+                </Tier>
+                <IsOmsContainer>false</IsOmsContainer>
+                <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+                <UsePriceMgmtAlgo xsi:nil="true" />
+              </order>
+              <childOrderDefinitions />
+            </OrderDefinition>
+            <OrderDefinition>
+              <name>stop</name>
+              <order>
+                <OrderId>0</OrderId>
+                <Solicited>false</Solicited>
+                <ClientId>0</ClientId>
+                <PermId>0</PermId>
+                <Action>SELL</Action>
+                <TotalQuantity>4</TotalQuantity>
+                <OrderType>MKT</OrderType>
+                <LmtPrice>1.7976931348623157E+308</LmtPrice>
+                <AuxPrice>0</AuxPrice>
+                <Tif>DAY</Tif>
+                <OcaGroup />
+                <OcaType>0</OcaType>
+                <OrderRef />
+                <Transmit>true</Transmit>
+                <ParentId>58</ParentId>
+                <BlockOrder>false</BlockOrder>
+                <SweepToFill>false</SweepToFill>
+                <DisplaySize>0</DisplaySize>
+                <TriggerMethod>0</TriggerMethod>
+                <OutsideRth>false</OutsideRth>
+                <Hidden>false</Hidden>
+                <GoodAfterTime />
+                <GoodTillDate />
+                <OverridePercentageConstraints>false</OverridePercentageConstraints>
+                <Rule80A />
+                <AllOrNone>false</AllOrNone>
+                <MinQty>2147483647</MinQty>
+                <PercentOffset>1.7976931348623157E+308</PercentOffset>
+                <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+                <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+                <FaGroup />
+                <FaProfile />
+                <FaMethod />
+                <FaPercentage />
+                <OpenClose />
+                <Origin>0</Origin>
+                <ShortSaleSlot>0</ShortSaleSlot>
+                <DesignatedLocation />
+                <ExemptCode>-1</ExemptCode>
+                <DiscretionaryAmt>0</DiscretionaryAmt>
+                <ETradeOnly>false</ETradeOnly>
+                <FirmQuoteOnly>false</FirmQuoteOnly>
+                <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+                <OptOutSmartRouting>false</OptOutSmartRouting>
+                <AuctionStrategy>0</AuctionStrategy>
+                <StartingPrice>1.7976931348623157E+308</StartingPrice>
+                <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+                <Delta>1.7976931348623157E+308</Delta>
+                <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+                <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+                <Volatility>1.7976931348623157E+308</Volatility>
+                <VolatilityType>0</VolatilityType>
+                <ContinuousUpdate>0</ContinuousUpdate>
+                <ReferencePriceType>0</ReferencePriceType>
+                <DeltaNeutralOrderType />
+                <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+                <DeltaNeutralConId>0</DeltaNeutralConId>
+                <DeltaNeutralSettlingFirm />
+                <DeltaNeutralClearingAccount />
+                <DeltaNeutralClearingIntent />
+                <DeltaNeutralOpenClose />
+                <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+                <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+                <DeltaNeutralDesignatedLocation />
+                <BasisPoints>1.7976931348623157E+308</BasisPoints>
+                <BasisPointsType>2147483647</BasisPointsType>
+                <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+                <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+                <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+                <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+                <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+                <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+                <ScaleAutoReset>false</ScaleAutoReset>
+                <ScaleInitPosition>2147483647</ScaleInitPosition>
+                <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+                <ScaleRandomPercent>false</ScaleRandomPercent>
+                <HedgeType />
+                <HedgeParam />
+                <Account />
+                <AlgoParams />
+                <WhatIf>false</WhatIf>
+                <NotHeld>false</NotHeld>
+                <SmartComboRoutingParams />
+                <OrderComboLegs />
+                <OrderMiscOptions />
+                <ActiveStartTime />
+                <ActiveStopTime />
+                <ScaleTable />
+                <ModelCode />
+                <ExtOperator />
+                <CashQty>1.7976931348623157E+308</CashQty>
+                <Mifid2DecisionMaker />
+                <Mifid2DecisionAlgo />
+                <Mifid2ExecutionTrader />
+                <Mifid2ExecutionAlgo />
+                <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+                <AutoCancelDate />
+                <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+                <RefFuturesConId>2147483647</RefFuturesConId>
+                <AutoCancelParent>false</AutoCancelParent>
+                <Shareholder />
+                <ImbalanceOnly>false</ImbalanceOnly>
+                <RouteMarketableToBbo>false</RouteMarketableToBbo>
+                <ParentPermId>9223372036854775807</ParentPermId>
+                <RandomizeSize>false</RandomizeSize>
+                <RandomizePrice>false</RandomizePrice>
+                <ReferenceContractId>0</ReferenceContractId>
+                <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+                <PeggedChangeAmount>0</PeggedChangeAmount>
+                <ReferenceChangeAmount>0</ReferenceChangeAmount>
+                <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+                <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+                <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+                <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+                <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+                <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+                <Conditions />
+                <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+                <ConditionsCancelOrder>false</ConditionsCancelOrder>
+                <Tier>
+                  <Name />
+                  <Value />
+                  <DisplayName />
+                </Tier>
+                <IsOmsContainer>false</IsOmsContainer>
+                <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+                <UsePriceMgmtAlgo xsi:nil="true" />
+              </order>
+              <childOrderDefinitions />
+            </OrderDefinition>
+          </childOrderDefinitions>
+        </OrderDefinition>
+        <OrderDefinition>
+          <name>SELL MID</name>
+          <order>
+            <OrderId>0</OrderId>
+            <Solicited>false</Solicited>
+            <ClientId>0</ClientId>
+            <PermId>0</PermId>
+            <Action>SELL</Action>
+            <TotalQuantity>4</TotalQuantity>
+            <OrderType>SNAP MID</OrderType>
+            <LmtPrice>1.7976931348623157E+308</LmtPrice>
+            <AuxPrice>0.01</AuxPrice>
+            <Tif>DAY</Tif>
+            <OcaGroup />
+            <OcaType>0</OcaType>
+            <OrderRef />
+            <Transmit>true</Transmit>
+            <ParentId>0</ParentId>
+            <BlockOrder>false</BlockOrder>
+            <SweepToFill>false</SweepToFill>
+            <DisplaySize>0</DisplaySize>
+            <TriggerMethod>0</TriggerMethod>
+            <OutsideRth>false</OutsideRth>
+            <Hidden>false</Hidden>
+            <GoodAfterTime />
+            <GoodTillDate />
+            <OverridePercentageConstraints>false</OverridePercentageConstraints>
+            <Rule80A />
+            <AllOrNone>false</AllOrNone>
+            <MinQty>2147483647</MinQty>
+            <PercentOffset>1.7976931348623157E+308</PercentOffset>
+            <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+            <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+            <FaGroup />
+            <FaProfile />
+            <FaMethod />
+            <FaPercentage />
+            <OpenClose />
+            <Origin>0</Origin>
+            <ShortSaleSlot>0</ShortSaleSlot>
+            <DesignatedLocation />
+            <ExemptCode>-1</ExemptCode>
+            <DiscretionaryAmt>0</DiscretionaryAmt>
+            <ETradeOnly>false</ETradeOnly>
+            <FirmQuoteOnly>false</FirmQuoteOnly>
+            <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+            <OptOutSmartRouting>false</OptOutSmartRouting>
+            <AuctionStrategy>0</AuctionStrategy>
+            <StartingPrice>1.7976931348623157E+308</StartingPrice>
+            <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+            <Delta>1.7976931348623157E+308</Delta>
+            <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+            <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+            <Volatility>1.7976931348623157E+308</Volatility>
+            <VolatilityType>0</VolatilityType>
+            <ContinuousUpdate>0</ContinuousUpdate>
+            <ReferencePriceType>0</ReferencePriceType>
+            <DeltaNeutralOrderType />
+            <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+            <DeltaNeutralConId>0</DeltaNeutralConId>
+            <DeltaNeutralSettlingFirm />
+            <DeltaNeutralClearingAccount />
+            <DeltaNeutralClearingIntent />
+            <DeltaNeutralOpenClose />
+            <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+            <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+            <DeltaNeutralDesignatedLocation />
+            <BasisPoints>1.7976931348623157E+308</BasisPoints>
+            <BasisPointsType>2147483647</BasisPointsType>
+            <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+            <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+            <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+            <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+            <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+            <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+            <ScaleAutoReset>false</ScaleAutoReset>
+            <ScaleInitPosition>2147483647</ScaleInitPosition>
+            <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+            <ScaleRandomPercent>false</ScaleRandomPercent>
+            <HedgeType />
+            <HedgeParam />
+            <Account />
+            <AlgoParams />
+            <WhatIf>false</WhatIf>
+            <NotHeld>false</NotHeld>
+            <SmartComboRoutingParams />
+            <OrderComboLegs />
+            <OrderMiscOptions />
+            <ActiveStartTime />
+            <ActiveStopTime />
+            <ScaleTable />
+            <ModelCode />
+            <ExtOperator />
+            <CashQty>1.7976931348623157E+308</CashQty>
+            <Mifid2DecisionMaker />
+            <Mifid2DecisionAlgo />
+            <Mifid2ExecutionTrader />
+            <Mifid2ExecutionAlgo />
+            <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+            <AutoCancelDate />
+            <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+            <RefFuturesConId>2147483647</RefFuturesConId>
+            <AutoCancelParent>false</AutoCancelParent>
+            <Shareholder />
+            <ImbalanceOnly>false</ImbalanceOnly>
+            <RouteMarketableToBbo>false</RouteMarketableToBbo>
+            <ParentPermId>9223372036854775807</ParentPermId>
+            <RandomizeSize>false</RandomizeSize>
+            <RandomizePrice>false</RandomizePrice>
+            <ReferenceContractId>0</ReferenceContractId>
+            <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+            <PeggedChangeAmount>0</PeggedChangeAmount>
+            <ReferenceChangeAmount>0</ReferenceChangeAmount>
+            <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+            <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+            <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+            <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+            <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+            <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+            <Conditions />
+            <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+            <ConditionsCancelOrder>false</ConditionsCancelOrder>
+            <Tier>
+              <Name />
+              <Value />
+              <DisplayName />
+            </Tier>
+            <IsOmsContainer>false</IsOmsContainer>
+            <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+            <UsePriceMgmtAlgo xsi:nil="true" />
+          </order>
+          <childOrderDefinitions />
+        </OrderDefinition>
+        <OrderDefinition>
+          <name>SELL MKT</name>
+          <order>
+            <OrderId>0</OrderId>
+            <Solicited>false</Solicited>
+            <ClientId>0</ClientId>
+            <PermId>0</PermId>
+            <Action>SELL</Action>
+            <TotalQuantity>4</TotalQuantity>
+            <OrderType>SNAP MKT</OrderType>
+            <LmtPrice>1.7976931348623157E+308</LmtPrice>
+            <AuxPrice>0</AuxPrice>
+            <Tif>DAY</Tif>
+            <OcaGroup />
+            <OcaType>0</OcaType>
+            <OrderRef />
+            <Transmit>true</Transmit>
+            <ParentId>0</ParentId>
+            <BlockOrder>false</BlockOrder>
+            <SweepToFill>false</SweepToFill>
+            <DisplaySize>0</DisplaySize>
+            <TriggerMethod>0</TriggerMethod>
+            <OutsideRth>false</OutsideRth>
+            <Hidden>false</Hidden>
+            <GoodAfterTime />
+            <GoodTillDate />
+            <OverridePercentageConstraints>false</OverridePercentageConstraints>
+            <Rule80A />
+            <AllOrNone>false</AllOrNone>
+            <MinQty>2147483647</MinQty>
+            <PercentOffset>1.7976931348623157E+308</PercentOffset>
+            <TrailStopPrice>1.7976931348623157E+308</TrailStopPrice>
+            <TrailingPercent>1.7976931348623157E+308</TrailingPercent>
+            <FaGroup />
+            <FaProfile />
+            <FaMethod />
+            <FaPercentage />
+            <OpenClose />
+            <Origin>0</Origin>
+            <ShortSaleSlot>0</ShortSaleSlot>
+            <DesignatedLocation />
+            <ExemptCode>-1</ExemptCode>
+            <DiscretionaryAmt>0</DiscretionaryAmt>
+            <ETradeOnly>false</ETradeOnly>
+            <FirmQuoteOnly>false</FirmQuoteOnly>
+            <NbboPriceCap>1.7976931348623157E+308</NbboPriceCap>
+            <OptOutSmartRouting>false</OptOutSmartRouting>
+            <AuctionStrategy>0</AuctionStrategy>
+            <StartingPrice>1.7976931348623157E+308</StartingPrice>
+            <StockRefPrice>1.7976931348623157E+308</StockRefPrice>
+            <Delta>1.7976931348623157E+308</Delta>
+            <StockRangeLower>1.7976931348623157E+308</StockRangeLower>
+            <StockRangeUpper>1.7976931348623157E+308</StockRangeUpper>
+            <Volatility>1.7976931348623157E+308</Volatility>
+            <VolatilityType>0</VolatilityType>
+            <ContinuousUpdate>0</ContinuousUpdate>
+            <ReferencePriceType>0</ReferencePriceType>
+            <DeltaNeutralOrderType />
+            <DeltaNeutralAuxPrice>1.7976931348623157E+308</DeltaNeutralAuxPrice>
+            <DeltaNeutralConId>0</DeltaNeutralConId>
+            <DeltaNeutralSettlingFirm />
+            <DeltaNeutralClearingAccount />
+            <DeltaNeutralClearingIntent />
+            <DeltaNeutralOpenClose />
+            <DeltaNeutralShortSale>false</DeltaNeutralShortSale>
+            <DeltaNeutralShortSaleSlot>0</DeltaNeutralShortSaleSlot>
+            <DeltaNeutralDesignatedLocation />
+            <BasisPoints>1.7976931348623157E+308</BasisPoints>
+            <BasisPointsType>2147483647</BasisPointsType>
+            <ScaleInitLevelSize>2147483647</ScaleInitLevelSize>
+            <ScaleSubsLevelSize>2147483647</ScaleSubsLevelSize>
+            <ScalePriceIncrement>1.7976931348623157E+308</ScalePriceIncrement>
+            <ScalePriceAdjustValue>1.7976931348623157E+308</ScalePriceAdjustValue>
+            <ScalePriceAdjustInterval>2147483647</ScalePriceAdjustInterval>
+            <ScaleProfitOffset>1.7976931348623157E+308</ScaleProfitOffset>
+            <ScaleAutoReset>false</ScaleAutoReset>
+            <ScaleInitPosition>2147483647</ScaleInitPosition>
+            <ScaleInitFillQty>2147483647</ScaleInitFillQty>
+            <ScaleRandomPercent>false</ScaleRandomPercent>
+            <HedgeType />
+            <HedgeParam />
+            <Account />
+            <AlgoParams />
+            <WhatIf>false</WhatIf>
+            <NotHeld>false</NotHeld>
+            <SmartComboRoutingParams />
+            <OrderComboLegs />
+            <OrderMiscOptions />
+            <ActiveStartTime />
+            <ActiveStopTime />
+            <ScaleTable />
+            <ModelCode />
+            <ExtOperator />
+            <CashQty>1.7976931348623157E+308</CashQty>
+            <Mifid2DecisionMaker />
+            <Mifid2DecisionAlgo />
+            <Mifid2ExecutionTrader />
+            <Mifid2ExecutionAlgo />
+            <DontUseAutoPriceForHedge>false</DontUseAutoPriceForHedge>
+            <AutoCancelDate />
+            <FilledQuantity>1.7976931348623157E+308</FilledQuantity>
+            <RefFuturesConId>2147483647</RefFuturesConId>
+            <AutoCancelParent>false</AutoCancelParent>
+            <Shareholder />
+            <ImbalanceOnly>false</ImbalanceOnly>
+            <RouteMarketableToBbo>false</RouteMarketableToBbo>
+            <ParentPermId>9223372036854775807</ParentPermId>
+            <RandomizeSize>false</RandomizeSize>
+            <RandomizePrice>false</RandomizePrice>
+            <ReferenceContractId>0</ReferenceContractId>
+            <IsPeggedChangeAmountDecrease>false</IsPeggedChangeAmountDecrease>
+            <PeggedChangeAmount>0</PeggedChangeAmount>
+            <ReferenceChangeAmount>0</ReferenceChangeAmount>
+            <TriggerPrice>1.7976931348623157E+308</TriggerPrice>
+            <LmtPriceOffset>1.7976931348623157E+308</LmtPriceOffset>
+            <AdjustedStopPrice>1.7976931348623157E+308</AdjustedStopPrice>
+            <AdjustedStopLimitPrice>1.7976931348623157E+308</AdjustedStopLimitPrice>
+            <AdjustedTrailingAmount>1.7976931348623157E+308</AdjustedTrailingAmount>
+            <AdjustableTrailingUnit>0</AdjustableTrailingUnit>
+            <Conditions />
+            <ConditionsIgnoreRth>false</ConditionsIgnoreRth>
+            <ConditionsCancelOrder>false</ConditionsCancelOrder>
+            <Tier>
+              <Name />
+              <Value />
+              <DisplayName />
+            </Tier>
+            <IsOmsContainer>false</IsOmsContainer>
+            <DiscretionaryUpToLimitPrice>false</DiscretionaryUpToLimitPrice>
+            <UsePriceMgmtAlgo xsi:nil="true" />
+          </order>
+          <childOrderDefinitions />
+        </OrderDefinition>
+      </orderDefinitions>
+    </OrderWatchlist>
+  </orderWatchlists>
+</IBControlDefinition>

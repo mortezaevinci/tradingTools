@@ -1,0 +1,6 @@
+getdata_IB_generic_config_daily1y_pennies;latestday=beginning+1;getdata_IB_generic;
+getdata_IB_generic_config_dailyx1y_pennies;latestday=beginning+1;getdata_IB_generic;
+getdata_IB_generic_config_intraday_pennies;latestday=beginning+1;getdata_IB_generic;
+getdata_IB_generic_config_daily1y;latestday=beginning+1;getdata_IB_generic;
+getdata_IB_generic_config_dailyx1y;latestday=beginning+1;getdata_IB_generic;
+getdata_IB_generic_config_intraday;latestday=beginning+1;getdata_IB_generic;

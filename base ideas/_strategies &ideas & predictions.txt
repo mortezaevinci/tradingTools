@@ -1,0 +1,87 @@
+2020-08-13
+Once AMD went under SMA20, and showed some come back signal, BUY for a week. Reason: AMZN worked the same way.
+
+
+2020-08-24
+tsla up for  jan 2021, 100M+ call, mid point
+QQQ/SPY down Dec 18, 2020, many puts at above ask or ask
+INTC up sep 18, 2020, call at ask, put at bid, TA over 50 to 54-55 seems possible, sl=47.25 (2R swing trade)
+EXPE up for jan  2021, call at above ask, has already moved, TA-wise, see if there is a buy setup, either limit order it at 92.25, or better, manually see if it holds 92, and stop order at 92.5, target 100
+BABA up for sep 18, multiple calls, one large above ask, broke out of double top, analyst price targets are high
+tska weekly for aug 28, call above ask, 
+kre down for sep 18, put above ask, by TA it does seem to want to go down for the short-term, below 37 can trigger a move down
+JPM down for jan 2022!, put above ask, jan 21, put at ask, probably depression prediction
+ZM up for sep 18, 2020, call above ask, ATH two days ago, and kinda consolidating there, hs room to 300+,
+aapl 520 for sep 18, call at ask
+
+
+
+daily strategy notes:
+* DXY can determine maximum government pumping. DXY under 0.95 may lead to bearish market. 
+* DIX (squeezemetrics.com/monitor/dix) is a dark index for SPY. If it goes up or down, SPY usually follows.
+* ATR or BB bands: crossing into lower can move up to the next level or higher bands. Crossing into upper can move down into next level ot lower bands.
+* Break out from all time high usually leads to a big move.
+* TradingView people provide daily analysis anyway.
+
+
+intraday checklist:
+* Volume buzz can tell when stock is making an unsual move. Best possible indicator.
+* support, when broken, becomes resistance. Resistance, when broken, becomes support.
+* typical good daytrade stock, opens up with a gap, then moves a bit, then consolidates, then moves again, then cools down and comes back from overshoot, .. next entry in the same direction is when a volume cooldown happens, and then there is a breakout.
+* downward break from the bottom of the intraday channel of stock that opened with a gap up, usually means that the uptrend is over.
+* day trade moving average windows should be 10, 21 ,50.
+
+part2:basic rules;
+(considering bullish case)
+1. there is a move up, then there is a correction. For the stock to continue move up, the correction should have a 30-45 degree to it (However it moved up, the move down has less steep). If the move down happens too fast, or even too fast in the first bar down, then the sellers are in control at the top, and it won't move up.)
+2. Ideally, the moveup (flagpole) is smooth (Not much overlapping (green-red-green-red)), and then the correction is also smooth (Not much overlap).
+3. The correction is not more than 50% (Which makes your stop loss worse and worse, and your target less acheivable).
+
+volume note:
+* when price moves tiny on a huge volume, the move is probably over. If there is a breakout on large volume but breakout is a tiny move, it is probably going to fail.
+
+premarket move ideas:
++2 moves up with increasing volume 
++ stock is generally going higher than previous points (higher than SMA20 to upper ATR)
+ => premarket moves up
++2 moves up with increasing volume
++ first move below upper ATR, 2nd below
+==>premakret up
++2 moves up with increasing volume
++1st below lower ATR, 2nd above it
++1st move really big
+=>premakret upp
++2 moves up with increasing volume
++1st below lower sma20, 2nd above it
++1st move really big
+=>premakret upp
++1 move consolidate
++1 move up really big
++ above SMA20
+=>probably down (retrace)
++1 move consolidate
++1 move up really big
++consolidate below ATR lower
++1 big move aboe ATR lower
+=>premakret up
++ under atr lower
++mutiple reds
++last day intraday is green and above one of the red days
+=>premarket up
+
+*** implement this looks simple
++premarket moved down, but intraday up
++repeated for another day
+(day before these two days is not lower than them (general trend reversal toward up))
+=>pre market up, if not intraday probably goes up
+
+opposite of ^ => move dn
+
++intraday up high, 
++next day, pre and intra both consolidate 
+=>premarket up
+
+
+
+
+

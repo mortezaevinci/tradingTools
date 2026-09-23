@@ -1,0 +1,1 @@
+start /MIN "XOM" "z:\My files\Project Trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" s=XOM,MRK,UNH,TLT,C,T,GLD,SLV,V,COST,UBER,NOW,DAL,LULU,GILD,MRNA,NOW,UAL,DOCU f=50 t=1000  d="z:\\My files\\Project Trading\\traderdata\\book\\" h="17:30:00"

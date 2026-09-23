@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB7BDB4D-923F-4C4E-BB20-68DBDC33C10A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IBSampleApp</RootNamespace>
+    <AssemblyName>IBSampleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountDownloadEndMessage.cs" />
+    <Compile Include="AccountSummaryEndMessage.cs" />
+    <Compile Include="AccountSummaryMessage.cs" />
+    <Compile Include="AccountUpdateMultiEndMessage.cs" />
+    <Compile Include="AccountUpdateMultiMessage.cs" />
+    <Compile Include="AccountValueMessage.cs" />
+    <Compile Include="AdvisorDataMessage.cs" />
+    <Compile Include="BondContractDetailsMessage.cs" />
+    <Compile Include="CommissionMessage.cs" />
+    <Compile Include="CompletedOrderMessage.cs" />
+    <Compile Include="ConnectionStatusMessage.cs" />
+    <Compile Include="ContractDetailsEndMessage.cs" />
+    <Compile Include="ContractDetailsMessage.cs" />
+    <Compile Include="DeepBookMessage.cs" />
+    <Compile Include="ErrorMessage.cs" />
+    <Compile Include="ExecutionMessage.cs" />
+    <Compile Include="extrainfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extrainfo.Designer.cs">
+      <DependentUpon>extrainfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyCodesMessage.cs" />
+    <Compile Include="FinancialAdvisorTypes.cs" />
+    <Compile Include="FundamentalsMessage.cs" />
+    <Compile Include="HeadTimestampMessage.cs" />
+    <Compile Include="HistogramDataMessage.cs" />
+    <Compile Include="HistoricalDataEndMessage.cs" />
+    <Compile Include="HistoricalDataMessage.cs" />
+    <Compile Include="HistoricalNewsEndMessage.cs" />
+    <Compile Include="HistoricalNewsMessage.cs" />
+    <Compile Include="HistoricalTickBidAskEndMessage.cs" />
+    <Compile Include="HistoricalTickBidAskMessage.cs" />
+    <Compile Include="HistoricalTickEndMessage.cs" />
+    <Compile Include="HistoricalTickLastEndMessage.cs" />
+    <Compile Include="HistoricalTickLastMessage.cs" />
+    <Compile Include="HistoricalTickMessage.cs" />
+    <Compile Include="IBClient.cs" />
+    <Compile Include="IBTypes.cs" />
+    <Compile Include="ManagedAccountsMessage.cs" />
+    <Compile Include="MarketDataMessage.cs" />
+    <Compile Include="MarketDataTypeMessage.cs" />
+    <Compile Include="MarketRuleMessage.cs" />
+    <Compile Include="MktDepthExchangesMessage.cs" />
+    <Compile Include="NewsArticleMessage.cs" />
+    <Compile Include="NewsProvidersMessage.cs" />
+    <Compile Include="OpenOrderMessage.cs" />
+    <Compile Include="OrderBoundMessage.cs" />
+    <Compile Include="OrderMessage.cs" />
+    <Compile Include="OrderStatusMessage.cs" />
+    <Compile Include="PnLMessage.cs" />
+    <Compile Include="PnLSingleMessage.cs" />
+    <Compile Include="PositionMessage.cs" />
+    <Compile Include="PositionMultiEndMessage.cs" />
+    <Compile Include="PositionMultiMessage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RealTimeBarMessage.cs" />
+    <Compile Include="ScannerEndMessage.cs" />
+    <Compile Include="ScannerMessage.cs" />
+    <Compile Include="ScannerParametersMessage.cs" />
+    <Compile Include="SecurityDefinitionOptionParameterEndMessage.cs" />
+    <Compile Include="SecurityDefinitionOptionParameterMessage.cs" />
+    <Compile Include="SoftDollarTiersMessage.cs" />
+    <Compile Include="SymbolSamplesMessage.cs" />
+    <Compile Include="TickByTickAllLastMessage.cs" />
+    <Compile Include="TickByTickBidAskMessage.cs" />
+    <Compile Include="TickByTickMidPointMessage.cs" />
+    <Compile Include="TickNewsMessage.cs" />
+    <Compile Include="TickOptionMessage.cs" />
+    <Compile Include="TickPriceMessage.cs" />
+    <Compile Include="TickReqParamsMessage.cs" />
+    <Compile Include="TickSizeMessage.cs" />
+    <Compile Include="ui\AccountManager.cs" />
+    <Compile Include="ui\AdvisorManager.cs" />
+    <Compile Include="ui\ComboContractResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\ComboContractResults.Designer.cs">
+      <DependentUpon>ComboContractResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\ConditionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\ConditionDialog.Designer.cs">
+      <DependentUpon>ConditionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\ContractManager.cs" />
+    <Compile Include="ui\ContractSearchControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\ContractSearchControl.Designer.cs">
+      <DependentUpon>ContractSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\ContractSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\ContractSearchDialog.Designer.cs">
+      <DependentUpon>ContractSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\FormOrderWatchlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\FormOrderWatchlist.Designer.cs">
+      <DependentUpon>FormOrderWatchlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\PnLManager.cs" />
+    <Compile Include="ui\NewsManager.cs" />
+    <Compile Include="ui\SymbolSamplesManager.cs" />
+    <Compile Include="ui\MarginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\MarginDialog.Designer.cs">
+      <DependentUpon>MarginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\OptionsManager.cs" />
+    <Compile Include="ui\OrderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\OrderDialog.Designer.cs">
+      <DependentUpon>OrderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\AcctPosMultiManager.cs" />
+    <Compile Include="ui\DataManager.cs" />
+    <Compile Include="ui\DeepBookManager.cs" />
+    <Compile Include="ui\HistoricalDataManager.cs" />
+    <Compile Include="ui\IBSampleApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\IBSampleApp.Designer.cs">
+      <DependentUpon>IBSampleApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ui\MarketDataManager.cs" />
+    <Compile Include="ui\OrderManager.cs" />
+    <Compile Include="ui\RealTimeBarsManager.cs" />
+    <Compile Include="ui\ScannerManager.cs" />
+    <Compile Include="ui\SecurityDefinitionOptionParameterKey.cs" />
+    <Compile Include="UpdateAccountTimeMessage.cs" />
+    <Compile Include="UpdatePortfolioMessage.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <EmbeddedResource Include="extrainfo.resx">
+      <DependentUpon>extrainfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\ComboContractResults.resx">
+      <DependentUpon>ComboContractResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\ConditionDialog.resx">
+      <DependentUpon>ConditionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\ContractSearchControl.resx">
+      <DependentUpon>ContractSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\ContractSearchDialog.resx">
+      <DependentUpon>ContractSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\FormOrderWatchlist.resx">
+      <DependentUpon>FormOrderWatchlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\IBSampleApp.resx">
+      <DependentUpon>IBSampleApp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ui\MarginDialog.resx">
+      <DependentUpon>MarginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\OrderDialog.resx">
+      <DependentUpon>OrderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\IBApi.Order.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="z:\k\TWS API\source\CSharpClient\client\CSharpAPI.csproj">
+      <Project>{66b172ea-317b-415f-b321-f005c5088f26}</Project>
+      <Name>CSharpAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IB2\ContractDefinition\ContractDefinition.csproj">
+      <Project>{9284781c-0c28-43eb-8c80-4f29469872f3}</Project>
+      <Name>ContractDefinition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IB2\IBAccountDefinition\IBAccountDefinition.csproj">
+      <Project>{3440aaea-e877-430d-8ac4-8b28bad4f31a}</Project>
+      <Name>IBAccountDefinition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IB2\OrderDefinition_\OrderDefinition.csproj">
+      <Project>{0db6df60-2794-4a83-a1d2-56617e3c49ea}</Project>
+      <Name>OrderDefinition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IB2\SystemExtension\SystemExtension.csproj">
+      <Project>{0c93e281-ad5c-4d00-8159-b975114b9baa}</Project>
+      <Name>SystemExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IB2\TradeExtensionExternalCondtion\TradeExtension.csproj">
+      <Project>{a0b8cbc0-bb6b-4c55-8dc1-3f38de16d471}</Project>
+      <Name>TradeExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrderDefinition\IbControlDefinition.csproj">
+      <Project>{b886f19f-a2bc-495c-b474-9f809bc27b95}</Project>
+      <Name>IbControlDefinition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ib_logo_2015.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

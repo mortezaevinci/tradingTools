@@ -1,0 +1,7 @@
+REM start /MIN "d1ypl" matlab.exe -batch "getdata_IB_generic_config_daily1y_pennies;dateslist=listDatesFromLast(0,0,0);getdata_IB_generic;"
+REM start /MIN "dx1ypl" matlab.exe -batch "getdata_IB_generic_config_dailyx1y_pennies;dateslist=listDatesFromLast(0,0,0);getdata_IB_generic;"
+REM start /MIN "inpl" matlab.exe -batch "getdata_IB_generic_config_intraday_pennies;dateslist=listDatesFromLast(0,0,0);getdata_IB_generic;"
+start /MIN "d1yl" matlab.exe -batch "getdata_IB_generic_config_daily1y;dateslist=listDatesFromLast(0,0,0);getdata_IB_generic;"
+start /MIN "dx1yl" matlab.exe -batch "getdata_IB_generic_config_dailyx1y;dateslist=listDatesFromLast(0,0,0);getdata_IB_generic;"
+start /MIN "inl" matlab.exe -batch "getdata_IB_generic_config_intraday;dateslist=listDatesFromLast(0,0,0);getdata_IB_generic;"
+REM start /MIN "ytsxl" matlab.exe -batch "getdata_tsx_y_last;"

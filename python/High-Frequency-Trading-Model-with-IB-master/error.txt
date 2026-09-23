@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\eventkit\event.py", line 184, in emit
+    func(obj, *args)
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 77, in on_tick
+    self.perform_trade_logic()
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 94, in perform_trade_logic
+    self.calculate_signals()
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 193, in calculate_signals
+    is_overbought, is_oversold = self.is_overbought_or_oversold()
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 205, in is_overbought_or_oversold
+    [symbol_a, symbol_b] = self.symbols
+ValueError: too many values to unpack (expected 2)
+Value ({Ticker(contract=Stock(symbol='ZM', exchange='SMART', currency='USD'), time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), bid=404.07, bidSize=5, ask=404.28, askSize=4, last=404.22, lastSize=1, prevBidSize=4, volume=29856, open=400.46, high=406.56, low=393.46, close=399.43, ticks=[TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=0, price=404.07, size=5)]), Ticker(contract=Stock(symbol='TSLA', exchange='SMART', currency='USD'), time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), bid=620.63, bidSize=16, ask=620.87, askSize=1, last=620.76, lastSize=1, prevBidSize=15, prevAsk=620.88, prevAskSize=3, volume=329865, open=628.03, high=632.5, low=605.0, close=633.25, ticks=[TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=2, price=620.87, size=1), TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=0, price=620.63, size=16)]), Ticker(contract=Stock(symbol='NFLX', exchange='SMART', currency='USD'), time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), bid=521.16, bidSize=1, ask=521.3, askSize=1, last=521.21, lastSize=1, prevAsk=521.32, prevAskSize=3, volume=19182, open=520.11, high=525.09, low=517.69, close=519.78, ticks=[TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=2, price=521.3, size=1)]), Ticker(contract=Stock(symbol='QQQ', exchange='SMART', currency='USD'), time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), bid=308.02, bidSize=1, ask=308.03, askSize=56, last=308.02, lastSize=2, prevBidSize=34, prevAskSize=16, prevLastSize=1, volume=144845, open=307.75, high=308.78, low=306.62, close=307.29, halted=0.0, ticks=[TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=0, price=308.02, size=1), TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=3, price=308.03, size=56)]), Ticker(contract=Stock(symbol='FB', exchange='SMART', currency='USD'), time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), bid=274.96, bidSize=2, ask=275.0, askSize=3, last=274.99, lastSize=1, prevBidSize=1, volume=91367, open=274.93, high=277.86, low=272.51, close=275.55, halted=0.0, ticks=[TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=0, price=274.96, size=2)]), Ticker(contract=Stock(symbol='NVDA', exchange='SMART', currency='USD'), time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), bid=529.82, bidSize=4, ask=530.0, askSize=2, last=529.82, lastSize=1, prevAskSize=4, volume=34576, open=537.49, high=537.49, low=528.5, close=534.42, ticks=[TickData(time=datetime.datetime(2020, 12, 16, 19, 26, 25, 298305, tzinfo=datetime.timezone.utc), tickType=3, price=530.0, size=2)])},) caused exception for event Event<pendingTickersEvent, [[None, <weakref at 0x000002F8F95D01D0; to 'HftModel1' at 0x000002F8E0E279D0>, <function HftModel1.on_tick at 0x000002F8F984D040>]]>
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\eventkit\event.py", line 184, in emit
+    func(obj, *args)
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 77, in on_tick
+    self.perform_trade_logic()
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 94, in perform_trade_logic
+    self.calculate_signals()
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 193, in calculate_signals
+    is_overbought, is_oversold = self.is_overbought_or_oversold()
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 205, in is_overbought_or_oversold
+    [symbol_a, symbol_b] = self.symbols
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\main.py", line 38, in <module>
+    model.run(to_trade=to_trade, trade_qty=1)
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 67, in run
+    self.recalculate_strategy_params()
+  File "Z:\My files\Project Trading\python\High-Frequency-Trading-Model-with-IB-master\models\hft_model_1.py", line 180, in recalculate_strategy_params
+    [symbol_a, symbol_b] = self.symbols
+ValueError: too many values to unpack (expected 2)

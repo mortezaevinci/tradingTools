@@ -1,0 +1,1 @@
+start /MIN "AAL" "z:\My files\Project trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" AAL,AAPL,AMD,ADBE,ROKU,BYND,AMZN,BAC,BA,DIS,FB,JNJ,SPY,QQQ,NDAQ,BABA,BILI,DELL 50 1000 "z:\My files\Project Trading\traderdata\book\"

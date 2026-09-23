@@ -1,0 +1,4 @@
+Here are some pennies swing ideas. Note that these are ideas and you are going to need to check the market and volume as well yourself.
+I prefer starting out with these numbers, and trail up the stop when there is a large green to under the large green as soon as it holds, while I would change target based on the order book. Pattern'd better form before entry. If stop hits before entry, consider the order cancelled.
+
+SYMBOL,STOP,ENTRY,TARGET

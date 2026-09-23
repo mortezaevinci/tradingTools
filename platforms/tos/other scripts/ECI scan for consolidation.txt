@@ -1,0 +1,93 @@
+# Given some of the recent discussion on consolidation and Mobius ECI study, 
+# for those folks that might be interested to scan the universe of stocks for 
+# such setups, I have converted Mobius ECI study into a scan. Two scan conditions 
+# are created - one for the bullish case and another for the bearish case. I 
+# have also removed variables not required for the scan.
+
+# Expansion Contraction Indication
+# Flags: Uses Fractal enregy to locate price compression or flag areas
+# Mobius
+# 3.18.2017
+
+# User Inputs
+input EciLength = 5; #hint EciLength: Length for calculations.
+input AvgType = AverageType.Simple; #hint AvgType: Average Type
+input MeanValue = HL2; #hint MeanValue: Point of origen.
+input betaDev = 4;
+
+script G {
+    input p = close;
+    input n = 2;
+    input b = 1.05;
+    def w;
+    def beta;
+    def alpha;
+    def G;
+    w = (2 * Double.Pi / n);
+    beta = (1 - Cos(w)) / (Power(1.414, 2.0 / b) - 1 );
+    alpha = (-beta + Sqrt(beta * beta + 2 * beta));
+    G = Power(alpha, 4) * p + 
+                 4 * (1 – alpha) * G[1] – 6 * Power( 1 - alpha, 2 ) * G[2] + 
+                 4 * Power( 1 - alpha, 3 ) * G[3] - Power( 1 - alpha, 4 ) * G[4];
+    plot data = G;
+}
+# Variables:
+def bar = barNumber();
+def o = g(open, ECIlength, betaDev);
+def h = g(high, ECIlength, betaDev);
+def l = g(low, ECIlength, betaDev);
+def c = g(close, ECIlength, betaDev);
+def ECI = Log(Sum(Max(h, c[1]) - Min(l, c[1]), ECIlength) / 
+           (Highest(h, ECIlength) - Lowest(l, ECIlength))) / 
+            Log(ECIlength);
+def Avg = MovingAverage(AverageType = AvgType, ECI, ECILength);
+def S1 = if ECI crosses above Avg 
+         then MeanValue
+         else S1[1];
+def S = ECI > Avg;
+def SBars = if ECI > Avg
+            then bar
+            else Double.NaN;
+def StartBar = if ECI crosses above Avg 
+               then bar
+               else StartBar[1];
+def LastSBar = if ECI crosses below Avg
+               then bar
+               else LastSBar[1];
+def PP = if ECI crosses above Avg
+         then MeanValue
+         else PP[1];
+def Mean_Limit = if bar != StartBar
+                 then bar - StartBar
+                 else if bar == StartBar
+                      then Double.NaN
+                      else Mean_Limit[1];
+def SHigh = if ECI crosses above Avg
+            then h
+            else SHigh[1];
+def SHighBar = if S and
+                  h == SHigh
+               then bar
+               else SHighBar[1];
+def SHigh_Limit = if bar == StartBar
+                  then Double.NaN
+                  else if bar > StartBar
+                       then bar - SHighBar
+                       else SHigh_Limit[1];
+def SLow = if ECI crosses above Avg
+           then l
+           else SLow[1];
+def SLowBar = if S and
+                  l == SLow
+              then bar
+              else SLowBar[1];
+def SLow_Limit = if bar == StartBar
+                 then Double.NaN
+                 else if bar > StartBar
+                      then bar - SLowBar
+                      else SLow_Limit[1];
+
+# Comment out (#) the ONE not needed
+plot BullScan = close crosses above SHigh;
+#plot BearScan = close crosses below SLow;
+# ECI Scan
