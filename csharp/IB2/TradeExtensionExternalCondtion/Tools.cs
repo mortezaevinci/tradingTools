@@ -13,12 +13,12 @@ namespace MHA
         public class Config
         {
             public string LogFilename = "ibmanageorders.log";
-            public string IBCDOrdersFilename = @"Z:\My files\Project Trading\repo\csharp\files\auto swing order lmt template 4 export pre-explosivevol.xml";
+            public string IBCDOrdersFilename = @"C:\temp\_results\tradingtools\files\auto swing order lmt template 4 export pre-explosivevol.xml";
             public string host = "";
             public int port = 4002;
             public int clientid = 2022;
             public string ConfigFilename = "config_manage_orders.xml";
-            public string DumpDirectory = @"Z:\My files\Project Trading\repo\csharp\files\";
+            public string DumpDirectory = @"C:\temp\_results\tradingtools\files\";
             public bool simulateOrderAll = false;
             public bool collectTickInfoOnly = false;
             public bool cancelOrdersWithoutPosition = false;

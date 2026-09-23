@@ -1,1 +1,1 @@
-start /MIN "PENNIES" "z:\My files\Project Trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" ACST,ADMS,AIM,CIDM,FRSX,GNUS,TTOO,SNES,NVAX,PTE,PTON,GE 50 5000 "z:\My files\Project Trading\traderdata\book\"
+start /MIN "PENNIES" "C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" ACST,ADMS,AIM,CIDM,FRSX,GNUS,TTOO,SNES,NVAX,PTE,PTON,GE 50 5000 "z:\My files\Project Trading\traderdata\book\"

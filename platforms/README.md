@@ -28,4 +28,5 @@ editor.
 `main watchlist instruments` is the watchlist. `readme.txt` is a single line
 pointing at the IB API documentation: <http://interactivebrokers.github.io/#>
 
-The C# side of Interactive Brokers is in `../csharp/IB` and `../csharp/IB2`.
+The C# side of Interactive Brokers is in [`../csharp/IB`](../csharp/IB) and
+[`../csharp/IB2`](../csharp/IB2); see [`../csharp/README.md`](../csharp/README.md).

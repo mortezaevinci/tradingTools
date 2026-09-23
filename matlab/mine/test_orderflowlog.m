@@ -1,4 +1,4 @@
-fn='Z:\My files\Project trading\repo\csharp\IB2\OrderFlowLogSimulationSpy\bin\Debug\netcoreapp3.1\orderflow.log';
+fn='C:\temp\tradingTools\csharp\IB2\OrderFlowLogSimulationSpy\bin\Debug\netcoreapp3.1\orderflow.log';
 fields_per_line = 5;
 fmt = repmat('%s',1,fields_per_line);
 fid = fopen(fn,'r');

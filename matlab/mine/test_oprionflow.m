@@ -3,7 +3,7 @@ date0='2020-08-26';
 if (~exist('loadcsvday') || strcmp(loadcsvday,date0)==0)
 weekday0=weekday(datetime(date0))-1;
 dd=datestr(datetime(date0),'yyyymmdd');
-csvfile=['C:\temp\_results\investment_notes\marketchameleon\OptionTradeScreenerResults_' dd '.csv'];
+csvfile=['C:\temp\_results\tradingtools\investment_notes\marketchameleon\OptionTradeScreenerResults_' dd '.csv'];
 chamm1day=readtable(csvfile);
 
 loadcsvday=date0;

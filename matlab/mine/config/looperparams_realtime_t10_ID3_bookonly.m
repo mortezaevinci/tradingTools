@@ -7,7 +7,7 @@ looperEngine.directories.PMAT='Z:\My files\Project trading\traderdata\data_proce
 looperEngine.directories.DTP='Z:\My files\Project trading\traderdata\data_processed\dailytrendprofile\';
 looperEngine.directories.options='Z:\My files\Project trading\traderdata\data\options\';
 
-looperEngine.files.bookviewrunner='z:\My files\Project trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe';
+looperEngine.files.bookviewrunner='C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe';
 
 contracts_daily=genContractsFromSymbols('IMVT,LOW,BABA,SGMO,BLDP,PDD,KODK,TSLA,ROST,GILD,MRNA,CREE,FUTU,TLGT,NMTR');
 

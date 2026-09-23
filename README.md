@@ -1,19 +1,14 @@
 # tradingTools
 
-Trading and market-analysis code built between roughly 2019 and 2021: order-book
-capture and replay, Interactive Brokers automation, options-flow screening,
-scraping of ratings and screener sites, MATLAB experiments, and the
-platform-side scripts that ran on thinkorswim and TradingView.
+Trading and market-analysis code written between roughly 2019 and 2021:
+order-book capture and replay, Interactive Brokers automation, options-flow
+screening, scraping of ratings and screener sites, MATLAB experiments, and the
+platform-side scripts that ran inside thinkorswim and TradingView.
 
-This is a personal working repository, not a product. Several projects are
-experiments that were carried as far as they needed to go and no further.
-
-> **Naming.** Some project folders are named awkwardly (`IB2`,
-> `marktebeat rating`, `temp TWS API`, `Sellenium…`). They are **left exactly as
-> they are on purpose**: the C# projects reference each other by relative path —
-> `IB` ⇄ `IB2` ⇄ `temp TWS API` — and executables, solutions and scripts keep
-> their original names so nothing that already runs stops running. The typos are
-> historical; treat the folder names as identifiers, not descriptions.
+A personal working repository, not a product. Several projects are experiments
+that were carried as far as they needed to go and no further. Everything here
+ran at some point against live or paper accounts; it is archived rather than
+maintained.
 
 ---
 
@@ -21,87 +16,68 @@ experiments that were carried as far as they needed to go and no further.
 
 | Folder | What is in it |
 |---|---|
-| `csharp/` | The main body of work. Order-book viewer and runner, IB automation, Selenium scrapers, MarketBeat ratings, notification service. |
-| `csharp_bookviewrunner_batch/` | The batch layer that drives `bookViewRunner` per symbol — `run AAL.bat`, `run TSLA.bat`, `runall.bat`. |
-| `matlab/` | Signal and machine-learning experiments against captured market data: option flow, neural nets, prediction models. |
-| `python/` | Three third-party projects kept for reference, plus setup notes. Not written here. |
-| `platforms/` | Scripts that live inside a trading platform rather than on this machine: thinkorswim studies and strategies, TradingView scripts, IB watchlists. |
-| `base ideas/` | The thinking behind the code — strategies, observations, contract details, vendor notes. Documents, not code. |
-| `javascript/` | One note on push notifications. |
-| `documentation/` | The IB trader template setup document. |
+| [`csharp/`](csharp/) | The main body of work — order-book viewer and runner, IB automation, Selenium scrapers, MarketBeat ratings, notifications. |
+| [`csharp_bookviewrunner_batch/`](csharp_bookviewrunner_batch/) | The batch layer that drives `bookViewRunner`, one `.bat` per symbol. |
+| [`matlab/`](matlab/) | Signal and machine-learning experiments against captured market data. |
+| [`python/`](python/) | Three third-party projects kept for reference. Not written here. |
+| [`platforms/`](platforms/) | Scripts that run inside a platform rather than on this machine: thinkorswim, TradingView, IB watchlists. |
+| [`documentation/`](documentation/) | The IB trader template setup document. |
+| [`javascript/`](javascript/) | One note on browser push notifications. |
 
-Market data and results are **not** in this repository. They live in
-`C:\temp\_results\investment_notes` (moved there 2026-09-23) — screener exports,
-market-chameleon CSVs, macro notes and screenshots, several hundred MB of it.
-The MATLAB option-flow scripts read from that path.
+Each folder has its own `README.md` with the detail.
 
----
+## Where the data is
 
-## csharp/
+**No market data, order data or research notes are in this repository.** They
+live outside it, on the machine that runs these tools:
 
-The largest area, and the one with real dependencies between projects.
+| Data | Location | Read by |
+|---|---|---|
+| Option screener exports, market and macro notes | `C:\temp\_results\tradingtools\investment_notes` | `matlab/mine/test_oprionflow*.m` |
+| Order and fill exports, order XML templates | `C:\temp\_results\tradingtools\files` | `csharp/IB2/ConsoleAppAddEc`, `csharp/IB2/TradeExtensionExternalCondtion`, `matlab/mine/trader_preorder.m`, `matlab/mine/trader/traderPreorder_portfolio.m` |
+| Strategy and research notes | `C:\temp\_results\tradingtools\base ideas` | — read by people, not code |
 
-| Project | What it does |
-|---|---|
-| `bookViewer/` | Windows Forms viewer for order-book data. |
-| `bookViewRunner/` | Captures the order book and writes it out — `SPY_book_history`, `SPY_book_realtime`, as both `.txt` and `.bin`. Driven per symbol by `csharp_bookviewrunner_batch/`. |
-| `bookViewer original test case/` | The earlier version of the viewer, kept as a reference case. |
-| `SelleniumRunner/` | Selenium-driven scraping, with its own serialisation helpers (`convertto2`, `testSerialize`, `testDeserialize`, `SystemCoreExpansion`) and a `MarkteData` definition shared with the book runner. |
-| `SelleniumTester/` | Scratch WinForms harness for the same. |
-| `chameleon test case/` | Reading Market Chameleon options tables — `ChameleonOptionsTable`, `ChameleonRunner`, `chamreader`. |
-| `marktebeat rating/` | MarketBeat analyst ratings: a scraper (`ChameleonRunner`), a definition library, and `MbbToCsv` to flatten the result. |
-| `IB/` | Interactive Brokers: the sample app, `IbClient`, `OrderDefinition`, and a testbed. |
-| `IB2/` | The larger IB work — order management (`OrderManager`, `ConsoleAppManageOrders`), order flow and its simulation, account and contract definitions, logging, an SMTP client, and `IbTrader`. |
-| `UserNoti/` | User notification service. |
-| `temp TWS API/` | The Interactive Brokers TWS API SDK, vendored. Third-party code; `IB` and `IB2` compile against it. |
-| `files/` | Order and fill CSVs exported while the above ran. |
+`C:\temp\_results\tradingtools\README.md` describes all three. A clone of this
+repository on another machine has no data: point the paths above at wherever it
+actually lives, then run.
 
-**Build order matters**, because the references cross folders:
-`temp TWS API` → `IB2` (definitions) → `IB` → the apps. Open a project's own
-`.sln`; the relative paths resolve from there.
+## Two things that will confuse you
 
-## matlab/
+**The names are wrong and stay wrong.** `IB2`, `marktebeat rating`,
+`temp TWS API`, `Sellenium…`, `MarkteData` — the typos are historical. The C#
+projects reference each other by relative path, so a folder rename means editing
+19 `.sln`/`.csproj` files, and every executable, solution and script keeps its
+original name so that what runs today keeps running. **Treat the folder names as
+identifiers, not descriptions.**
 
-| Folder | What is in it |
-|---|---|
-| `mine/` | The work written here: option-flow analysis, IB contract handling, neural-net helpers. `test_oprionflow*.m` read the Market Chameleon screener CSVs from `C:\temp\_results\investment_notes\marketchameleon\`. |
-| `marktedata/` | Processed per-symbol `.mat` captures. |
-| `nnet/`, `nnet_pattern/`, `nnet_quoteonly/` | Neural-network experiments, including an LSTM sequence-classification example. |
-| `predictmodel/`, `naxnettest/`, `dp/` | Prediction and classifier trials. |
+**Some paths still point at a drive that is gone.** This code was written against
+a mapped `Z:` drive. Paths that referred to this repository or to data that still
+exists were corrected on 2026-09-23 — 92 of them, plus the data paths above.
+About 410 remain, nearly all pointing at `Z:\My files\Project trading\traderdata`,
+which was the live capture output: the raw order-book `.bin` and `.txt` files the
+tools wrote continuously. That data was never in this repository and is not on
+this machine, so those paths were left alone rather than aimed somewhere wrong.
+They are mostly in `matlab/marktedata/`. If you revive that side, set the capture
+directory once and fix them from there.
 
-## python/
+## Build order
 
-Third-party, kept for reference — none of it was written here:
+The C# projects have to be built in dependency order, because they reference each
+other across folders:
 
-| Folder | Source |
-|---|---|
-| `High-Frequency-Trading-Model-with-IB-master/` | Public HFT-with-IB model. |
-| `Teino1978-Corp-High-Frequency-Trading-Model-with-IB-master/` | A fork of the same. |
-| `wsb_scraper-main/` | WallStreetBets scraper. |
+    csharp/temp TWS API      the vendored IB SDK
+        └── csharp/IB2       definitions, order management, logging
+              └── csharp/IB  sample app, client, order definition, testbed
+                    └── the console apps and forms
 
-`jarvis setup notes.txt` is the setup note that goes with them.
+Open the `.sln` inside a project's own folder — the relative references resolve
+from where the solution sits. See [`csharp/README.md`](csharp/README.md).
 
-## platforms/
+Requires Visual Studio with .NET Framework targeting packs. Build output
+(`bin/`, `obj/`, `.vs/`) is ignored, so a clone is source only.
 
-Code that runs inside the broker or charting platform, not here:
+## Licence note
 
-- `tos/` — thinkorswim: `study/`, `strategy/` (dated live and papermoney runs),
-  watchlists, scan studies, and notes.
-- `tradingview/` — Pine scripts.
-- `IB/` — watchlist instruments, and a pointer to the IB API docs.
-
----
-
-## Running the book capture
-
-`csharp_bookviewrunner_batch/` holds one `.bat` per symbol plus `runall.bat`.
-Its own `readme.txt` records why output goes where it does: the book files are
-written to a RAM/flash-sparing path first and moved afterwards, to avoid
-hammering the flash drive with continuous writes.
-
-## State of things
-
-Everything here ran at some point between 2019 and 2021 against live or paper
-accounts. It is archived rather than maintained: paths that once pointed at a
-mapped `Z:` drive have been corrected where they were found, but nothing has
-been rebuilt or re-tested recently.
+`csharp/temp TWS API/` is the Interactive Brokers TWS API SDK and `python/` is
+three public projects, all vendored unchanged. They carry their own licences —
+check them before reusing anything from either.

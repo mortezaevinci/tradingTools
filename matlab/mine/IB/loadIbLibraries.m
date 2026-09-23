@@ -2,9 +2,9 @@ function loadIbLibraries()
 try
     %% libraries
 
-assemblies.IBApi = NET.addAssembly(('Z:\My files\Project trading\repo\matlab\mine\bin\release\CSharpAPI.dll'));
-assemblies.IBBackEnd = NET.addAssembly(('Z:\My files\Project trading\repo\matlab\mine\bin\release\IBBackEnd.dll'));
-assemblies.IBCD = NET.addAssembly(('Z:\My files\Project trading\repo\matlab\mine\bin\release\IBControlDefinition.dll'));
+assemblies.IBApi = NET.addAssembly(('C:\temp\tradingTools\matlab\mine\bin\release\CSharpAPI.dll'));
+assemblies.IBBackEnd = NET.addAssembly(('C:\temp\tradingTools\matlab\mine\bin\release\IBBackEnd.dll'));
+assemblies.IBCD = NET.addAssembly(('C:\temp\tradingTools\matlab\mine\bin\release\IBControlDefinition.dll'));
 
 assemblies.System.IO = NET.addAssembly('System.IO');
 assemblies.System.Runtime.Serialization = NET.addAssembly('System.Runtime.Serialization');

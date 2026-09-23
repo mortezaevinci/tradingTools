@@ -15,8 +15,8 @@ base_profiling='Z:\My files\Project trading\traderdata\algotrading\autoswing\tri
 ctfn=[base_profiling 'contractTriggers' ' ' 'premarket1' ' ' date0 '.mat'];
 load(conidmapfn);
 
-IBCDTemplate='Z:\My files\Project trading\repo\csharp\files\auto swing order lmt template2.xml';
-IBCDLog='Z:\My files\Project trading\repo\csharp\files\log\';
+IBCDTemplate='C:\temp\_results\tradingtools\files\auto swing order lmt template2.xml';
+IBCDLog='C:\temp\_results\tradingtools\files\log\';
 ibDataHandler=IbDataHandler;
 
 ib_libraries;

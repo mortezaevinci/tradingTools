@@ -6,7 +6,7 @@ looperEngine.directories.PAP='Z:\My files\Project trading\traderdata\data_proces
 looperEngine.directories.PMAT='Z:\My files\Project trading\traderdata\data_processed\indicatorprofile\';
 looperEngine.directories.DTP='Z:\My files\Project trading\traderdata\data_processed\dailytrendprofile\';
 looperEngine.directories.options='Z:\My files\Project trading\traderdata\data\options\';
-looperEngine.files.bookviewrunner='z:\My files\Project trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe';
+looperEngine.files.bookviewrunner='C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe';
 
 looperEngine.contracts={genContract([],'AAL'),...
 genContract([],'AAPL'),...

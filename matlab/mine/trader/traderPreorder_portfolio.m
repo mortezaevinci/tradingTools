@@ -9,7 +9,7 @@ IBCDTemplatefn=[base_trader base_template '.xml'];
 IBCDexportfn=[base_trader base_template ' export ' 'portfolio' '.xml'];
 IBCDexport_backup_fn=[base_trader base_template ' export ' 'portfolio' ' backup ' date0 '.xml'];
 
-IBCDLog='Z:\My files\Project trading\repo\csharp\files\log\';
+IBCDLog='C:\temp\_results\tradingtools\files\log\';
 
 ibDataHandler=IbDataHandler;
 

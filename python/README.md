@@ -13,3 +13,4 @@ Check each project's own licence before reusing any of it.
 `jarvis setup notes.txt` records the setup these were run under.
 
 Nothing here is wired into the C# or MATLAB work — treat it as reading material.
+The repository overview is [`../README.md`](../README.md).

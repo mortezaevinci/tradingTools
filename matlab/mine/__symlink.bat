@@ -1,1 +1,1 @@
-mklink /J /D bin "Z:\My files\Project trading\repo\csharp\IB2\ewrpertest4\bin"
+mklink /J /D bin "C:\temp\tradingTools\csharp\IB2\ewrpertest4\bin"

@@ -1,1 +1,1 @@
-start /MIN "TSLA" "z:\My files\Project trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" TSLA,SHOP,MSFT,NVDA,NFLX,WMT,ZM,PFE,DDOG,CCL,F,AVGO,PG,SNAP,INO,SHIP,NET,NIO 50 1000 "z:\My files\Project Trading\traderdata\book\"
+start /MIN "TSLA" "C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" TSLA,SHOP,MSFT,NVDA,NFLX,WMT,ZM,PFE,DDOG,CCL,F,AVGO,PG,SNAP,INO,SHIP,NET,NIO 50 1000 "z:\My files\Project Trading\traderdata\book\"

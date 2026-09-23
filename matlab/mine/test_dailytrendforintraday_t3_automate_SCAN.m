@@ -1,8 +1,8 @@
 %% libraries
 
-asmp1 = NET.addAssembly(('Z:\My files\Project trading\repo\matlab\mine\bin\Release\CSharpAPI.dll'));
-asmp2 = NET.addAssembly(('Z:\My files\Project trading\repo\matlab\mine\bin\Release\IBBackEnd.dll'));
-asmp3 = NET.addAssembly(('Z:\My files\Project trading\repo\matlab\mine\bin\Release\IBControlDefinition.dll'));
+asmp1 = NET.addAssembly(('C:\temp\tradingTools\matlab\mine\bin\Release\CSharpAPI.dll'));
+asmp2 = NET.addAssembly(('C:\temp\tradingTools\matlab\mine\bin\Release\IBBackEnd.dll'));
+asmp3 = NET.addAssembly(('C:\temp\tradingTools\matlab\mine\bin\Release\IBControlDefinition.dll'));
 
 asm1 = NET.addAssembly('System.IO');
 asm2 = NET.addAssembly('System.Runtime.Serialization');

@@ -6,7 +6,7 @@ for i=1:numel(dates0)
 date0=dates0{i};
 weekday0=weekday(datetime(date0))-1;
 dd=datestr(datetime(date0),'yyyymmdd');
-csvfile=['C:\temp\_results\investment_notes\marketchameleon\OptionTradeScreenerResults_' dd '.csv'];
+csvfile=['C:\temp\_results\tradingtools\investment_notes\marketchameleon\OptionTradeScreenerResults_' dd '.csv'];
 chamm{i}=readtable(csvfile);
 end
 end

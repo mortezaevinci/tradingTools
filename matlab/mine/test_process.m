@@ -1,10 +1,10 @@
-bookviewcommand=['start /MIN "ONDEMAND" "' 'z:\My files\Project trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe' '" ' 'AAPL' ' 50 5000 "' 'c:\temp\traderdata\book_ondemand\' '"'];
-bookviewcommand=['"z:\My files\Project trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe' '" ' 'AAPL' ' 50 5000 "' 'c:\temp\traderdata\book_ondemand\' '"'];
+bookviewcommand=['start /MIN "ONDEMAND" "' 'C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe' '" ' 'AAPL' ' 50 5000 "' 'c:\temp\traderdata\book_ondemand\' '"'];
+bookviewcommand=['"C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe' '" ' 'AAPL' ' 50 5000 "' 'c:\temp\traderdata\book_ondemand\' '"'];
 
 % status = system(bookviewcommand);
 
 proc = System.Diagnostics.Process(); 
-proc.StartInfo.FileName = 'z:\My files\Project trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe';
+proc.StartInfo.FileName = 'C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe';
 %proc.StartInfo.FileName = 'cmd';
 proc.StartInfo.UseShellExecute = false;
 proc.StartInfo.Arguments = ['AAPL' ' 50 5000 "' 'c:\temp\traderdata\book_ondemand\' '"'];

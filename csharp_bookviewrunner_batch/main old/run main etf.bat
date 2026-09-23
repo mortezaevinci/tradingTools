@@ -1,1 +1,1 @@
-"z:\My files\Project Trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" SPY,QQQ,NDAQ 50 5000 "z:\My files\Project Trading\traderdata\book\"
+"C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" SPY,QQQ,NDAQ 50 5000 "z:\My files\Project Trading\traderdata\book\"

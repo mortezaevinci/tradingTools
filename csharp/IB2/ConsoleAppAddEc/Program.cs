@@ -15,7 +15,7 @@ namespace ConsoleAppAddEc
         {
             IBControlDefinition IBCD;
             IBCD = new IBControlDefinition();
-            IBCD.loadXML(@"Z:\My files\Project Trading\repo\csharp\files\auto swing order lmt template 3.xml");
+            IBCD.loadXML(@"C:\temp\_results\tradingtools\files\auto swing order lmt template 3.xml");
             OrderDefinition pod = IBCD.orderWatchlists[0].orderDefinitions[0];
 
             MHA.ExternalCondition ec = new ExternalCondition();
@@ -38,7 +38,7 @@ namespace ConsoleAppAddEc
             ec2.thresholdType = ExternalCondition.ThresholdType.EntryLmt;
             pod.externalConditions.Add(ec2);
 
-            IBCD.saveXML(@"Z:\My files\Project Trading\repo\csharp\files\auto swing order lmt template 4.xml");
+            IBCD.saveXML(@"C:\temp\_results\tradingtools\files\auto swing order lmt template 4.xml");
          
         }
     }

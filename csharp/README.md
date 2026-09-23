@@ -62,7 +62,23 @@ there. Its version must match the installed Chrome.
 | Project | What it does |
 |---|---|
 | `UserNoti/` | User notification service. |
-| `files/` | Order, fill and completed-order CSVs exported while the above ran — data, not code. |
+
+## Where the data went
+
+`csharp/files/` used to sit here — the order and fill CSVs and the order XML
+templates. It moved to `C:\temp\_results\tradingtools\files` on 2026-09-23,
+because it is live account data rather than source.
+
+Two projects here read and write it, and both were repointed at the same time:
+
+| File | What it uses |
+|---|---|
+| `IB2/ConsoleAppAddEc/Program.cs` | loads and saves `auto swing order lmt template *.xml` |
+| `IB2/TradeExtensionExternalCondtion/Tools.cs` | `IBCDOrdersFilename`, and `DumpDirectory` for output |
+
+Both previously pointed at `Z:\My files\Project Trading\repo\csharp\files`, a
+mapped drive that no longer exists — so they now resolve for the first time in
+years. If you clone this elsewhere, those two paths are what to change.
 
 ## Building
 

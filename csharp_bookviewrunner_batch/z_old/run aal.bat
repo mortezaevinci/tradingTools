@@ -1,1 +1,1 @@
-start /MIN "AAL" "z:\My files\Project Trading\repo\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" s=AAL,AAPL,AMD,ADBE,ROKU,BYND,AMZN,BAC,BA,DIS,FB,JNJ,SPY,QQQ,NDAQ,BABA,BILI,DELL f=50 t=1000 d="z:\\My files\\Project Trading\\traderdata\\book\\" h="17:30:00"
+start /MIN "AAL" "C:\temp\tradingTools\csharp\bookViewRunner\bookViewRunner\bin\release\bookviewrunner.exe" s=AAL,AAPL,AMD,ADBE,ROKU,BYND,AMZN,BAC,BA,DIS,FB,JNJ,SPY,QQQ,NDAQ,BABA,BILI,DELL f=50 t=1000 d="z:\\My files\\Project Trading\\traderdata\\book\\" h="17:30:00"

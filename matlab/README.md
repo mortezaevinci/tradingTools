@@ -1,33 +1,54 @@
 # matlab
 
 Signal and machine-learning experiments against captured market data. Research
-code: written to answer a question, kept in whatever state it was in when the
+code: written to answer a question, and left in whatever state it was in when the
 question was answered.
 
 ## Folders
 
 | Folder | What is in it |
 |---|---|
-| `mine/` | The work written here. Option-flow analysis, IB contract handling (`IbContractDetails2Mat.m`), helpers such as `MaxHigh.m`, and an `NN` subfolder. |
-| `marktedata/` | Processed per-symbol captures as `.mat` — "processed sample AAL2020-06-13.mat" and similar. The folder name is a typo for *marketdata*, left as it is. |
-| `nnet/` | Neural-network work, including the LSTM sequence-classification example it was based on. |
-| `nnet_pattern/`, `nnet_quoteonly/` | Variants: pattern inputs, and quote-only inputs. |
+| `mine/` | The work written here — option-flow analysis, IB contract handling (`IbContractDetails2Mat.m`), order pre-staging (`trader_preorder.m`, `trader/`), helpers such as `MaxHigh.m`, and an `NN` subfolder. |
+| `marktedata/` | Order-book readers and processed per-symbol captures as `.mat`. The folder name is a typo for *marketdata*, left as it is. |
+| `nnet/` | Neural-network work, including the LSTM sequence-classification example it started from. |
+| `nnet_pattern/`, `nnet_quoteonly/` | Variants — pattern inputs, and quote-only inputs. |
 | `predictmodel/` | Classifier trials, e.g. `TrainAKNNClassifierExample.m`. |
 | `naxnettest/` | NARX-style tests with their own data (`CHO.csv`, `CHO_results.xlsx`) and an error-performance helper (`errperf.m`). |
 | `dp/` | Dynamic-programming scratch work. |
 
-## Data path
+## Data paths
 
-`mine/test_oprionflow.m`, `test_oprionflow_daily.m` and
-`test_oprionflow_daily_total.m` read the Market Chameleon screener exports:
+These scripts read and write **outside the repository**. All of the following
+were corrected on 2026-09-23 and resolve on this machine:
 
-    C:\temp\_results\investment_notes\marketchameleon\OptionTradeScreenerResults_<yymmdd>.csv
+| Script | Path it uses |
+|---|---|
+| `mine/test_oprionflow.m`, `test_oprionflow_daily.m`, `test_oprionflow_daily_total.m` | `C:\temp\_results\tradingtools\investment_notes\marketchameleon\OptionTradeScreenerResults_<yymmdd>.csv` |
+| `mine/trader_preorder.m` | `C:\temp\_results\tradingtools\files\` — the order XML template, and `log\` |
+| `mine/trader/traderPreorder_portfolio.m` | `C:\temp\_results\tradingtools\files\log\` |
 
-Those three used to point at `Z:\My files\Project Trading\investment notes\...`,
-a mapped drive that no longer exists on this machine. They were repointed on
-2026-09-23 when the data moved to `C:\temp\_results\investment_notes`. **The data
-is not in this repository** — it is several hundred MB of exports and belongs
-beside the results, not in source control.
+Each is a single line near the top of its script. On another machine, those are
+the only lines to change.
 
-If you run these somewhere else, that path at the top of each script is the only
-thing to change.
+## Paths that are still dead, on purpose
+
+`marktedata/` reads the raw order-book capture — the `.bin` and `.txt` files
+`bookViewRunner` wrote continuously:
+
+    Z:\My files\Project trading\traderdata\book\<symbol>_book_realtime.txt
+    Z:\My files\Project trading\traderdata\book\<symbol>_book_history <date>.bin
+
+`Z:` was a mapped drive that no longer exists, and **that capture data is not on
+this machine at all**, so these were left pointing at the old path rather than
+aimed somewhere that does not hold it either. Roughly 410 references, nearly all
+in `marktedata/`.
+
+If you revive the capture side: decide where the book files land, then replace
+that one prefix throughout. A handful of other lines reference a `Q:` drive —
+they are commented out, history rather than code.
+
+## Running
+
+MATLAB with the Statistics and Machine Learning and Deep Learning toolboxes for
+the `nnet*` and `predictmodel` work. The option-flow scripts need nothing beyond
+base MATLAB — they read CSV and plot.
