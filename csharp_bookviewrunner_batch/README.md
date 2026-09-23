@@ -24,7 +24,7 @@ Both ends of that arrangement are stale now. The destination was
 `Z:\My files\Project Trading\traderdata\book\`, a mapped drive that no longer
 exists, and `m:\` was a RAM or scratch disk that is not set up either. Nothing
 was repointed, because that capture data is not on this machine to point at —
-see the dead-paths section of [`../matlab/README.md`](../matlab/README.md), which
+see the Z: drive section of [`../matlab/README.md`](../matlab/README.md), which
 hits the same wall from the reading side.
 
 **To run these again:** pick a scratch directory and an archive directory, set

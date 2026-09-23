@@ -50,15 +50,15 @@ projects reference each other by relative path, so a folder rename means editing
 original name so that what runs today keeps running. **Treat the folder names as
 identifiers, not descriptions.**
 
-**Some paths still point at a drive that is gone.** This code was written against
-a mapped `Z:` drive. Paths that referred to this repository or to data that still
-exists were corrected on 2026-09-23 — 92 of them, plus the data paths above.
-About 410 remain, nearly all pointing at `Z:\My files\Project trading\traderdata`,
-which was the live capture output: the raw order-book `.bin` and `.txt` files the
-tools wrote continuously. That data was never in this repository and is not on
-this machine, so those paths were left alone rather than aimed somewhere wrong.
-They are mostly in `matlab/marktedata/`. If you revive that side, set the capture
-directory once and fix them from there.
+**Many paths point at the `Z:` drive. They are correct — `Z:` is simply not
+attached right now.** Do not "fix" them and do not repoint them at something that
+looks close; attach the drive instead. The only paths changed on 2026-09-23 were
+the ones whose data had genuinely moved, listed in the table above.
+About 410 `Z:` references remain, nearly all pointing at
+`Z:\My files\Project trading\traderdata`,
+the live capture output: the raw order-book `.bin` and `.txt` files the tools
+wrote continuously. They are mostly in `matlab/marktedata/`, and they resolve as
+soon as the drive is attached.
 
 ## Build order
 

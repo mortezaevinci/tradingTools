@@ -76,9 +76,10 @@ Two projects here read and write it, and both were repointed at the same time:
 | `IB2/ConsoleAppAddEc/Program.cs` | loads and saves `auto swing order lmt template *.xml` |
 | `IB2/TradeExtensionExternalCondtion/Tools.cs` | `IBCDOrdersFilename`, and `DumpDirectory` for output |
 
-Both previously pointed at `Z:\My files\Project Trading\repo\csharp\files`, a
-mapped drive that no longer exists — so they now resolve for the first time in
-years. If you clone this elsewhere, those two paths are what to change.
+Both previously pointed at `Z:\My files\Project Trading\repo\csharp\files`.
+That data has moved to `_results`, which is why these two were repointed. Other
+`Z:` paths in this repository are **not** stale — that drive is simply not
+attached — so leave them as they are.
 
 ## Building
 

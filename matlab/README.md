@@ -30,7 +30,7 @@ were corrected on 2026-09-23 and resolve on this machine:
 Each is a single line near the top of its script. On another machine, those are
 the only lines to change.
 
-## Paths that are still dead, on purpose
+## Paths on the Z: drive — leave them alone
 
 `marktedata/` reads the raw order-book capture — the `.bin` and `.txt` files
 `bookViewRunner` wrote continuously:
@@ -38,13 +38,10 @@ the only lines to change.
     Z:\My files\Project trading\traderdata\book\<symbol>_book_realtime.txt
     Z:\My files\Project trading\traderdata\book\<symbol>_book_history <date>.bin
 
-`Z:` was a mapped drive that no longer exists, and **that capture data is not on
-this machine at all**, so these were left pointing at the old path rather than
-aimed somewhere that does not hold it either. Roughly 410 references, nearly all
-in `marktedata/`.
-
-If you revive the capture side: decide where the book files land, then replace
-that one prefix throughout. A handful of other lines reference a `Q:` drive —
+**These are correct.** `Z:` is a real drive that is simply not attached to this
+machine at the moment, and the capture data lives on it. Roughly 410 references,
+nearly all in `marktedata/`. Attach the drive and they resolve; do not rewrite
+them to point somewhere else. A handful of other lines reference a `Q:` drive —
 they are commented out, history rather than code.
 
 ## Running
